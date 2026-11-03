@@ -50,8 +50,10 @@ export default defineConfig({
           ]
         },
         {
-          text: '领域案例：车载语音测试',
+          text: '领域案例：车载语音',
           items: [
+            { text: '语音开发学习路线', link: '/vehicle-voice-development-roadmap' },
+            { text: '语音开发知识点文档', link: '/vehicle-voice/development/' },
             { text: '专题导览', link: '/vehicle-voice-testing' },
             { text: '专题学习路线', link: '/vehicle-voice-roadmap' },
             { text: '端到端架构与测试边界', link: '/architecture' },

@@ -19,9 +19,11 @@
 
 每个领域案例独立说明系统链路、专有术语、数据、接口、风险和验收方式。语音与视觉分别编写和维护，复用通用工程主干，不混用领域指标或测试数据。
 
-### 车载语音测试
+### 车载语音
 
-独立内容线覆盖声学输入、唤醒、ASR/NLU、多轮对话、业务执行、HMI、车辆信号和 HIL。进入[语音案例导览](/vehicle-voice-testing)，按[语音专项学习路线](/vehicle-voice-roadmap)逐步学习。
+**开发内容线**覆盖系统架构、数字音频与 DSP、音频前端、唤醒/VAD、ASR、NLU、对话管理、TTS、车机集成和端侧部署。按[语音开发学习路线](/vehicle-voice-development-roadmap)学习，并通过[开发知识点目录](/vehicle-voice/development/)逐篇阅读独立专题。
+
+**测试内容线**覆盖声学输入、唤醒、ASR/NLU、多轮对话、业务执行、HMI、车辆信号和 HIL。进入[语音测试专题导览](/vehicle-voice-testing)，按[语音测试学习路线](/vehicle-voice-roadmap)逐步学习。
 
 ### 车载视觉
 
