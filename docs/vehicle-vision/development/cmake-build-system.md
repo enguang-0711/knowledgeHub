@@ -16,6 +16,14 @@
 
 为一个图像处理库创建可安装 CMake target，支持主机单测和交叉编译配置。干净环境可按 README 构建并运行最小推理示例。
 
+## 从源码到可部署制品
+
+1. 将算法库、应用、单元测试和模型工具拆成明确的 CMake target，使用 `target_include_directories`、`target_link_libraries` 和 target 级编译选项表达依赖，避免目录级全局设置污染其他模块。
+2. 把主机工具与目标程序分开配置：交叉编译时显式指定 toolchain、sysroot、目标 ABI 和依赖查找路径；配置生成文件放入独立 build 目录，不提交本机缓存。
+3. 为安装规则、运行时资源和第三方动态库建立清单；在干净环境执行 configure、build、test、install 和最小样例启动，验证制品没有依赖开发机路径。
+
+**排查与验收：**配置失败先看编译器/工具链与依赖解析，链接失败再核对 ABI 和库路径，运行时加载失败检查目标设备上的动态库。交付固定命令、依赖版本、构建类型和测试结果。
+
 ## 延伸阅读
 
 [C++ 资源生命周期](./cpp-resource-lifecycle) · [模型导出](./model-export) · [视觉回归与 CI 测试](/vehicle-vision/testing/regression-ci)

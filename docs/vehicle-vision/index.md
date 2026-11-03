@@ -12,3 +12,7 @@
 交互式模型：[ADAS 前视相机标定台 3D 展示](/vehicle-vision/development/adas-calibration-3d)（偏航、俯仰与针孔投影的教学演示）。
 
 交互式模型：[环视泊车验证台 3D 展示](/vehicle-vision/development/surround-view-parking-3d)（四路环视视锥、泊车场景与 BEV 示意）。
+
+交互式模型：[前视 ADAS 道路验证台](/vehicle-vision/development/adas-road-3d)（前车跟踪、相邻车切入、遮挡行人与几何真值距离）。
+
+交互式模型：[驾驶员监测 DMS 座舱试验台](/vehicle-vision/development/dms-cabin-3d)（座椅位置、驾驶员眼睛与近红外相机的几何关系，以及四类已知输入标签）。

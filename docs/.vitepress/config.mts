@@ -89,7 +89,9 @@ export default defineConfig({
             { text: '视觉开发学习路线', link: '/vehicle-vision/development/roadmap' },
             { text: '视觉开发知识点文档', link: '/vehicle-vision/development/' },
             { text: 'ADAS 标定台 3D 展示', link: '/vehicle-vision/development/adas-calibration-3d' },
-            { text: '环视泊车验证台 3D 展示', link: '/vehicle-vision/development/surround-view-parking-3d' }
+            { text: '环视泊车验证台 3D 展示', link: '/vehicle-vision/development/surround-view-parking-3d' },
+            { text: '前视 ADAS 道路验证台', link: '/vehicle-vision/development/adas-road-3d' },
+            { text: '驾驶员监测 DMS 座舱试验台', link: '/vehicle-vision/development/dms-cabin-3d' }
           ]
         },
         {

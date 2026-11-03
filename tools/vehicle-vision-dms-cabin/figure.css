@@ -1,0 +1,83 @@
+.iso-page{width:min(1120px,100% - 24px);margin:16px auto 32px}
+.iso-figure{margin:0}
+.iso-plate{padding:48px 20px 18px;border-radius:14px;background:var(--anatomy-card);box-shadow:0 0 0 1px var(--anatomy-faint),0 16px 44px #18212b12}
+.iso-plate-corners{inset:16px 20px}
+.dms-stage{position:relative;overflow:hidden;border-radius:10px;background:radial-gradient(ellipse at 52% 50%,#fff 0%,#f5f6f2 68%,#e7ebe6 100%)}
+.dms-svg-wrap>.dms-cabin-figure{display:block;width:100%;height:auto}
+.dms-cabin-figure .cabin-floor-trim .iso-fill{fill:#d9ded8}
+.dms-cabin-figure .seat-upholstery .iso-fill{fill:#9da9a1}
+.dms-cabin-figure .driver-garment .iso-fill{fill:#77877f}
+.dms-cabin-figure .gauge-glass .iso-fill,.dms-cabin-figure .console-glass .iso-fill{fill:#17252c}
+.windscreen-glass{fill:#9cafaa;fill-opacity:.25;stroke:#758682;stroke-width:1;vector-effect:non-scaling-stroke}
+.dms-view-wash{fill:#55aa7d;fill-opacity:.075;stroke:none}
+.dms-view-edge{stroke:#4a9870;stroke-width:1.2;stroke-dasharray:3 5;opacity:.8;vector-effect:non-scaling-stroke}
+.dms-gaze-line{fill:none;stroke:#2d9466;stroke-width:1.6;stroke-dasharray:3 3;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.eye-pupil{fill:#182421;stroke:#e7ebe5;stroke-width:.55;vector-effect:non-scaling-stroke}
+[data-eyelids] path{fill:none;stroke:#313d38;stroke-width:3.1;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.lens-cover{transition:opacity .18s ease}
+.dms-screen-bg{fill:#17252c;stroke:#56666a;stroke-width:12}
+.dms-screen-rule{fill:none;stroke:#526368;stroke-width:7}
+.dms-face-box{fill:#7bd1a310;stroke:#7bd1a3;stroke-width:13;vector-effect:non-scaling-stroke}
+.dms-face-box.eyes-closed{stroke:#dfb975;fill:#dfb97512}
+.dms-screen-eyes{fill:none;stroke:#a8c8b8;stroke-width:15;stroke-linecap:round}
+.dms-screen-eyes.is-closed{stroke:#e2bd78}
+.dms-screen-mouth{fill:none;stroke:#8ba298;stroke-width:12;stroke-linecap:round}
+.dms-screen-title{fill:#91a49c;font:600 64px ui-monospace,monospace;letter-spacing:6px}
+.dms-screen-status{fill:#e6eee7;font:700 56px ui-monospace,monospace;letter-spacing:1px}
+.dms-screen-distance{fill:#b7c8be;font:500 74px ui-monospace,monospace}
+.dms-screen-led{fill:#70c697;stroke:#d6efdf;stroke-width:8}
+.dms-screen-led.is-invalid{fill:#d49a5f;stroke:#f3dfc7}
+.dms-screen-validity{fill:#b1c2b8;font:600 44px ui-monospace,monospace;letter-spacing:2px}
+.dms-gauge-bg{fill:#17252c;stroke:#53636a;stroke-width:14}
+.dms-gauge-rule,.dms-gauge-arc{fill:none;stroke:#94a69b;stroke-width:11;stroke-linecap:round}
+.dms-gauge-needle{fill:none;stroke:#79c598;stroke-width:15;stroke-linecap:round}
+.dms-gauge-hub{fill:#bed0c4;stroke:#273837;stroke-width:8}
+.dms-gauge-led{fill:#69c38f;stroke:#d7efdf;stroke-width:7}
+.dms-controls{display:grid;grid-template-columns:minmax(270px,.95fr) 1px minmax(390px,1.4fr);gap:24px;padding:20px 4px 0;color:var(--anatomy-text)}
+.scenario-control,.live-controls{display:grid;gap:12px;align-content:start}
+.control-heading{display:flex;align-items:baseline;gap:10px}
+.control-heading>span{color:var(--anatomy-muted);font:10px var(--anatomy-mono);letter-spacing:.1em}
+.control-heading small,.seat-control small{color:var(--anatomy-muted);font-size:11px}
+.scenario-buttons{display:grid;gap:7px}
+.scenario-button{display:grid;grid-template-columns:28px 1fr;align-items:center;gap:10px;padding:9px 11px;border:1px solid #dce1dc;border-radius:8px;background:#ffffff85;color:#4e5a55;text-align:left;cursor:pointer;transition:border-color .18s ease,background .18s ease}
+.scenario-button:hover{border-color:#96b1a1;background:#fff}
+.scenario-button[aria-pressed=true]{border-color:#78a88e;background:#eef6f0;box-shadow:inset 3px 0 #579671}
+.scenario-index{color:#9aa8a0;font:11px var(--anatomy-mono)}
+.scenario-button b,.seat-control b{display:block;color:#28332e;font-size:12px;font-weight:600}
+.scenario-button small{display:block;margin-top:2px;color:#7b8981;font-size:10px;line-height:1.35}
+.control-divider{background:#e2e5e1}
+.live-controls{grid-template-columns:minmax(220px,1fr) minmax(150px,.7fr) auto;align-items:center;gap:14px 18px}
+.seat-control{grid-column:1/-1;display:grid;grid-template-columns:175px 1fr 66px;align-items:center;gap:12px}
+.seat-control>span{display:grid;gap:3px}
+.seat-control input{width:100%;accent-color:#448a68}
+.seat-control output{color:#394b42;font:11px var(--anatomy-mono);text-align:right;font-variant-numeric:tabular-nums}
+.distance-readout{display:grid;gap:3px;padding:9px 12px;border-left:2px solid #78a88e;background:#f5f8f5}
+.distance-readout span{color:#718077;font-size:10px}
+.distance-readout strong{color:#347b5b;font:600 20px var(--anatomy-mono);font-variant-numeric:tabular-nums}
+.distance-readout small{color:#859087;font-size:9px}
+.reset-button{align-self:end;padding:7px 10px;border:1px solid #c8d0cb;border-radius:6px;background:#fff;color:#54635a;font:10px var(--anatomy-mono);cursor:pointer;white-space:nowrap}
+.reset-button:hover{border-color:#8eae9b;background:#f7faf7}
+.model-note{grid-column:1/-1;color:#849087;font-size:10px;line-height:1.5}
+[hidden]{display:none!important}
+.scenario-button:focus-visible,.reset-button:focus-visible,.seat-control input:focus-visible{outline:2px solid #317d63;outline-offset:3px}
+@media(max-width:820px){
+  .dms-controls{grid-template-columns:1fr;gap:15px;padding-top:14px}
+  .control-divider{height:1px;width:100%}
+  .scenario-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .scenario-button{grid-template-columns:1fr;align-content:start;min-height:72px;gap:5px;padding:8px}
+  .live-controls{grid-template-columns:minmax(190px,1fr) auto auto}
+}
+@media(max-width:560px){
+  .iso-page{width:calc(100% - 10px);margin:7px auto 12px}
+  .iso-plate{padding:44px 6px 14px;border-radius:10px}
+  .iso-plate-corners{inset:14px 10px}
+  .dms-stage{border-radius:7px}
+  .scenario-buttons{grid-template-columns:1fr}
+  .scenario-button{grid-template-columns:24px 1fr;min-height:0}
+  .live-controls{grid-template-columns:1fr auto;gap:10px}
+  .seat-control{grid-template-columns:104px 1fr 48px;gap:7px}
+  .seat-control small{font-size:9px}
+  .distance-readout{grid-column:1;grid-row:2}
+  .reset-button{grid-column:2;grid-row:2}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
