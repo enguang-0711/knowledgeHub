@@ -1,0 +1,19 @@
+.video-aside-slot {
+  margin-bottom: 24px;
+}
+
+.video-mobile-slot {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .video-aside-slot {
+    display: none;
+  }
+
+  .video-mobile-slot {
+    display: block;
+    max-width: 640px;
+    margin: 40px auto 0;
+  }
+}
