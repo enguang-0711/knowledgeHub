@@ -12,6 +12,7 @@ const topics: Record<string, Topic> = {
   'vehicle-voice-testing': { title: '车载语音测试专题', query: '车载语音自动化测试 ASR NLU HIL' },
   'vehicle-voice-roadmap': { title: '车载语音测试学习路线', query: '车载语音测试 ASR NLU 自动化学习' },
   'vehicle-vision': { title: '车载视觉系统测试', query: '车载视觉测试 ADAS 感知 摄像头' },
+  'vehicle-vision/development-roadmap': { title: '车载视觉开发学习路线', query: '车载视觉算法开发 C++ 深度学习 模型部署' },
   'vehicle-vision/roadmap': { title: '车载视觉测试学习路线', query: '自动驾驶视觉感知测试 数据集 评估指标' },
   'vehicle-vision/camera-imaging-calibration': { title: '摄像头成像与标定', query: '车载摄像头 ISP 相机内外参 标定' },
   'vehicle-vision/dataset-and-annotation': { title: '视觉数据集与标注质量', query: '自动驾驶视觉数据集 标注规范 CVAT 数据质量' },

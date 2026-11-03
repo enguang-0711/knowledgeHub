@@ -2,6 +2,8 @@
 
 本页是**车载视觉测试的独立领域文档**。它从摄像头成像与数据开始，说明怎样验证视觉感知模型和车端应用的结果。视觉测试与[车载语音测试](/vehicle-voice-testing)分别维护：语音看波形、识别和对话状态；视觉看图像/视频、感知输出和标注对齐。两者共享测试工程方法，但不混用数据、指标和验收门槛。
 
+视觉专题现提供两条互补路线：[车载视觉开发学习路线](/vehicle-vision/development-roadmap)聚焦算法实现、工程化与车端部署；[车载视觉测试学习路线](/vehicle-vision/roadmap)聚焦数据评估、场景覆盖和验证闭环。
+
 ## 先界定“车载视觉”包含什么
 
 “车载视觉”不是单一模型。不同功能的输入、输出、风险和验收指标不同，阅读资料和设计用例前先明确被测系统属于哪一类。
@@ -47,7 +49,7 @@ ADAS 是高级驾驶辅助系统（Advanced Driver Assistance Systems）；AVM �
 | 仿真与回放 | 离线、视频回放、SIL/HIL 的覆盖边界是什么 | [仿真、回放与 SIL/HIL](/vehicle-vision/simulation-replay) |
 | ECU 与 CI | 如何测端侧时延、资源、稳定性并做版本回归 | [ECU 性能、回归与 CI](/vehicle-vision/ecu-performance-ci) |
 
-按顺序学习时，可将[视觉测试学习路线](/vehicle-vision/roadmap)作为阶段计划；如果有明确工作任务，可直接进入对应专题，再回到路线补齐先修内容。
+按顺序学习时，可根据当前职责选择[视觉开发学习路线](/vehicle-vision/development-roadmap)或[视觉测试学习路线](/vehicle-vision/roadmap)作为阶段计划；如果有明确工作任务，可直接进入对应专题，再回到路线补齐先修内容。
 
 ### 1. 相机成像与标定
 

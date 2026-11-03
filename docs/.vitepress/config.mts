@@ -65,9 +65,10 @@ export default defineConfig({
           ]
         },
         {
-          text: '领域案例：车载视觉测试',
+          text: '领域案例：车载视觉',
           items: [
             { text: '视觉案例导览', link: '/vehicle-vision/' },
+            { text: '视觉开发学习路线', link: '/vehicle-vision/development-roadmap' },
             { text: '视觉测试学习路线', link: '/vehicle-vision/roadmap' },
             { text: '成像、坐标与标定', link: '/vehicle-vision/camera-imaging-calibration' },
             { text: '数据集与标注质量', link: '/vehicle-vision/dataset-and-annotation' },
