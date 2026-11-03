@@ -10,3 +10,5 @@
 开发专题文档集中在 `development/`，测试专题文档集中在 `testing/`。两者共享通用工程能力，各自维护领域知识、数据口径、工具和验收目标。
 
 交互式模型：[ADAS 前视相机标定台 3D 展示](/vehicle-vision/development/adas-calibration-3d)（偏航、俯仰与针孔投影的教学演示）。
+
+交互式模型：[环视泊车验证台 3D 展示](/vehicle-vision/development/surround-view-parking-3d)（四路环视视锥、泊车场景与 BEV 示意）。

@@ -63,3 +63,8 @@
 - [车载视觉开发学习路线](/vehicle-vision/development/roadmap)
 
 不同应用方向会复用基础算法，但各自的传感器、坐标和验收条件不同；具体项目以正式需求、接口和数据授权为准。
+
+## 交互式 3D 展示
+
+- [ADAS 前视相机标定台](./adas-calibration-3d)
+- [环视泊车验证台](./surround-view-parking-3d)

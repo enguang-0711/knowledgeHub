@@ -10,8 +10,11 @@
     "model:adas-calibration": "node tools/vehicle-vision-anatomy/build.mjs",
     "model:adas-calibration:verify": "node tools/vehicle-vision-anatomy/build.mjs --verify",
     "model:adas-calibration:audit": "node tools/vehicle-vision-anatomy/build.mjs --audit",
-    "docs:dev": "npm run model:adas-calibration && vitepress dev docs",
-    "docs:build": "npm run model:adas-calibration && vitepress build docs",
+    "model:surround-parking": "node tools/vehicle-vision-parking/build.mjs",
+    "model:surround-parking:verify": "node tools/vehicle-vision-parking/build.mjs --verify",
+    "model:surround-parking:audit": "node tools/vehicle-vision-parking/build.mjs --audit",
+    "docs:dev": "npm run model:adas-calibration && npm run model:surround-parking && vitepress dev docs",
+    "docs:build": "npm run model:adas-calibration && npm run model:surround-parking && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "hooks:install": "git config core.hooksPath .githooks"
   },

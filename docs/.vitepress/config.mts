@@ -88,7 +88,8 @@ export default defineConfig({
           items: [
             { text: '视觉开发学习路线', link: '/vehicle-vision/development/roadmap' },
             { text: '视觉开发知识点文档', link: '/vehicle-vision/development/' },
-            { text: 'ADAS 标定台 3D 展示', link: '/vehicle-vision/development/adas-calibration-3d' }
+            { text: 'ADAS 标定台 3D 展示', link: '/vehicle-vision/development/adas-calibration-3d' },
+            { text: '环视泊车验证台 3D 展示', link: '/vehicle-vision/development/surround-view-parking-3d' }
           ]
         },
         {

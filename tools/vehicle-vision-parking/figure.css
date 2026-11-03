@@ -1,0 +1,101 @@
+.iso-page{width:min(1120px,100% - 24px);margin:16px auto 30px}
+.iso-figure{margin:0}
+.iso-plate{padding:48px 20px 18px;border-radius:14px;background:var(--anatomy-card);box-shadow:0 0 0 1px var(--anatomy-faint),0 16px 44px #18212b12}
+.iso-plate-corners{inset:16px 20px}
+.iso-plate-corner{font-size:10px}
+.parking-stage{position:relative;overflow:hidden;border-radius:10px;background:radial-gradient(ellipse at 52% 48%,#fff 0%,#f5f6f2 66%,#e7ebe6 100%);cursor:grab;touch-action:pan-y;outline:none}
+.parking-stage[data-drag]{cursor:grabbing}
+.parking-stage:focus-visible{outline:2px solid #317d63;outline-offset:3px}
+.parking-stage>.parking-figure{position:relative;z-index:0;width:100%;height:auto}
+.parking-figure .bay-marking{stroke-width:1.2}
+.parking-figure .camera-coverage{fill:#55a881;fill-opacity:.13;stroke:none}
+.parking-figure .camera-coverage.is-muted{fill-opacity:0}
+.parking-figure .coverage-edge{stroke:#448b6b;stroke-width:1.15;stroke-dasharray:3 5;opacity:.72}
+.parking-figure .coverage-edge.is-muted{opacity:0}
+.parking-figure .vehicle-glass{fill:#8da3a2;fill-opacity:.78;stroke:#5c6e70;stroke-width:1.2;vector-effect:non-scaling-stroke}
+.parking-figure .camera-module .camera-lens-marker{fill:#3e9b73;stroke:#f5fff9;stroke-width:1.3;vector-effect:non-scaling-stroke}
+.parking-figure .display-glass .iso-fill{fill:#1d2b32}
+.parking-figure .display-lip .iso-fill{fill:#101a20}
+.parking-figure .lamp-solid .iso-fill{fill:#cfd7c9}
+.scenario-ramp-top{fill:#bdc4c0;stroke:#7e8985;stroke-width:1;vector-effect:non-scaling-stroke}
+.scenario-ramp-side{fill:#858f8b;stroke:#66716d;stroke-width:.8;vector-effect:non-scaling-stroke}
+.scenario-ramp-end{fill:#68736f;stroke:#58615e;stroke-width:.8;vector-effect:non-scaling-stroke}
+.ramp-reflection{fill:#ecf1df;fill-opacity:.78;stroke:#d7e1c9;stroke-width:.8;vector-effect:non-scaling-stroke}
+.bev-screen-bg{fill:#17252c;stroke:#53626a;stroke-width:10}
+.bev-parking-lines,.bev-center-line,.bev-rule{fill:none;stroke:#c7d0ca;stroke-width:10;stroke-linecap:round}
+.bev-center-line{stroke:#758781;stroke-dasharray:18 24;stroke-width:6}
+.bev-car-body{fill:#b7c4be;stroke:#edf3ed;stroke-width:9}
+.bev-car-glass{fill:#52666a;stroke:#c6d2ce;stroke-width:6}
+.bev-camera-zone{fill:#55bd8c;fill-opacity:.1;stroke:#6bc69a;stroke-width:5;stroke-dasharray:14 12}
+.bev-obstacle{fill:#e6c27b;stroke:#fff2d6;stroke-width:8}
+.bev-ramp{fill:#dae2c6;stroke:#f4f8e9;stroke-width:7}
+.bev-kicker{fill:#8fa19c;font:44px ui-monospace,monospace;letter-spacing:4px}
+.bev-distance{fill:#e8f0e8;font:700 94px ui-monospace,monospace}
+.bev-rule{stroke:#526169;stroke-width:5}
+.bev-value{fill:#d4ddd7;font:600 55px ui-monospace,monospace}
+.bev-status-dot{fill:#62c08e;stroke:#c5ebd4;stroke-width:8}
+.bev-status{fill:#b2c2b8;font:600 48px ui-monospace,monospace;letter-spacing:5px}
+.parking-controls{display:grid;grid-template-columns:minmax(260px,.9fr) 1px minmax(400px,1.4fr);gap:24px;padding:20px 4px 0;color:var(--anatomy-text)}
+.scenario-control,.live-controls{display:grid;gap:12px;align-content:start}
+.control-heading,.camera-control>span{display:flex;align-items:baseline;gap:10px}
+.control-heading>span{color:var(--anatomy-muted);font:10px var(--anatomy-mono);letter-spacing:.1em}
+.control-heading small,.camera-control small,.lateral-control small{color:var(--anatomy-muted);font-size:11px}
+.scenario-buttons{display:grid;gap:7px}
+.scenario-button{display:grid;grid-template-columns:28px 1fr;align-items:center;gap:10px;padding:9px 11px;border:1px solid #dce1dc;border-radius:8px;background:#ffffff85;color:#4e5a55;text-align:left;cursor:pointer;transition:border-color .18s ease,background .18s ease,transform .18s ease}
+.scenario-button:hover{border-color:#96b1a1;background:#fff}
+.scenario-button[aria-pressed=true]{border-color:#78a88e;background:#eef6f0;box-shadow:inset 3px 0 #579671}
+.scenario-index{color:#9aa8a0;font:11px var(--anatomy-mono)}
+.scenario-button b,.lateral-control b,.camera-control b{display:block;color:#28332e;font-size:12px;font-weight:600}
+.scenario-button small{display:block;margin-top:2px;color:#7b8981;font-size:10px;line-height:1.35}
+.control-divider{background:#e2e5e1}
+.live-controls{grid-template-columns:minmax(220px,1fr) minmax(145px,.7fr) auto;align-items:center;gap:14px 18px}
+.lateral-control{grid-column:1/-1;display:grid;grid-template-columns:150px 1fr 62px;align-items:center;gap:12px}
+.lateral-control>span{display:grid;gap:3px}
+.lateral-control input{width:100%;accent-color:#448a68}
+.lateral-control output{color:#394b42;font:11px var(--anatomy-mono);text-align:right;font-variant-numeric:tabular-nums}
+.clearance-readout{display:grid;gap:3px;padding:9px 12px;border-left:2px solid #78a88e;background:#f5f8f5}
+.clearance-readout span{color:#718077;font-size:10px}
+.clearance-readout strong{color:#347b5b;font:600 20px var(--anatomy-mono);font-variant-numeric:tabular-nums}
+.clearance-readout small{color:#859087;font-size:9px}
+.clearance-readout.is-near{border-color:#b68153;background:#faf3eb}
+.clearance-readout.is-near strong{color:#a46331}
+.camera-control{display:grid;gap:6px}
+.camera-control>span{gap:8px}
+.camera-control small{font-size:9px}
+.camera-buttons{display:flex;gap:4px}
+.camera-button{min-width:32px;padding:5px 8px;border:1px solid #d4dbd6;border-radius:5px;background:#fff;color:#66736b;font:10px var(--anatomy-mono);cursor:pointer}
+.camera-button:hover{border-color:#8eae9b}
+.camera-button[aria-pressed=true]{border-color:#538a6b;background:#eaf3ed;color:#2e6f4c}
+.reset-button{align-self:end;padding:7px 10px;border:1px solid #c8d0cb;border-radius:6px;background:#fff;color:#54635a;font:10px var(--anatomy-mono);cursor:pointer;white-space:nowrap}
+.reset-button:hover{border-color:#8eae9b;background:#f7faf7}
+.scenario-object[hidden]{display:none}
+.scenario-object,.camera-coverage,.clearance-readout,.parking-figure #moving-vehicle{transition:opacity .18s ease,fill-opacity .18s ease}
+.iso-reset,.reset-button,.scenario-button,.camera-button,.lateral-control input{outline-offset:3px}
+.scenario-button:focus-visible,.camera-button:focus-visible,.reset-button:focus-visible,.lateral-control input:focus-visible{outline:2px solid #317d63}
+@media(max-width:820px){
+  .parking-controls{grid-template-columns:1fr;gap:15px;padding-top:14px}
+  .control-divider{height:1px;width:100%}
+  .scenario-buttons{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .scenario-button{grid-template-columns:1fr;align-content:start;min-height:74px;gap:5px;padding:8px}
+  .live-controls{grid-template-columns:minmax(190px,1fr) auto auto}
+}
+@media(max-width:560px){
+  .iso-page{width:calc(100% - 10px);margin:7px auto 12px}
+  .iso-plate{padding:44px 6px 14px;border-radius:10px}
+  .iso-plate-corners{inset:14px 10px}
+  .iso-plate-corner{font-size:8px}
+  .parking-stage{border-radius:7px}
+  .scenario-buttons{grid-template-columns:1fr}
+  .scenario-button{grid-template-columns:24px 1fr;min-height:0}
+  .live-controls{grid-template-columns:1fr auto;gap:10px}
+  .lateral-control{grid-template-columns:92px 1fr 48px;gap:7px}
+  .lateral-control small{font-size:9px}
+  .clearance-readout{grid-column:1;grid-row:2}
+  .camera-control{grid-column:1/-1}
+  .reset-button{grid-column:2;grid-row:2}
+  .camera-control>span{display:grid;gap:2px}
+  .camera-buttons{justify-content:flex-start}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
