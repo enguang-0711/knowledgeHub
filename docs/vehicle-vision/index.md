@@ -8,3 +8,5 @@
 | 测试 | 从摄像头与数据质量走到指标、ODD 场景覆盖、仿真回放和 ECU 回归，形成可复现的验证证据 | [测试专题导览](/vehicle-vision/testing/) · [测试学习路线](/vehicle-vision/testing/roadmap) |
 
 开发专题文档集中在 `development/`，测试专题文档集中在 `testing/`。两者共享通用工程能力，各自维护领域知识、数据口径、工具和验收目标。
+
+交互式模型：[ADAS 前视相机标定台 3D 展示](/vehicle-vision/development/adas-calibration-3d)（偏航、俯仰与针孔投影的教学演示）。

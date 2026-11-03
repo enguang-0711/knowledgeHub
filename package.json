@@ -3,9 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20.10.0"
+  },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "model:adas-calibration": "node tools/vehicle-vision-anatomy/build.mjs",
+    "model:adas-calibration:verify": "node tools/vehicle-vision-anatomy/build.mjs --verify",
+    "model:adas-calibration:audit": "node tools/vehicle-vision-anatomy/build.mjs --audit",
+    "docs:dev": "npm run model:adas-calibration && vitepress dev docs",
+    "docs:build": "npm run model:adas-calibration && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "hooks:install": "git config core.hooksPath .githooks"
   },
