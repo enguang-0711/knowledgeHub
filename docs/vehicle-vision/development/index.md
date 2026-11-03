@@ -70,3 +70,4 @@
 - [环视泊车验证台](./surround-view-parking-3d)
 - [前视 ADAS 道路验证台](./adas-road-3d)
 - [驾驶员监测 DMS 座舱试验台](./dms-cabin-3d)
+- [乘员监测 OMS 多座位试验台](./oms-cabin-3d)

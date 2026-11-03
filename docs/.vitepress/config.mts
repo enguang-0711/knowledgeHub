@@ -91,7 +91,8 @@ export default defineConfig({
             { text: 'ADAS 标定台 3D 展示', link: '/vehicle-vision/development/adas-calibration-3d' },
             { text: '环视泊车验证台 3D 展示', link: '/vehicle-vision/development/surround-view-parking-3d' },
             { text: '前视 ADAS 道路验证台', link: '/vehicle-vision/development/adas-road-3d' },
-            { text: '驾驶员监测 DMS 座舱试验台', link: '/vehicle-vision/development/dms-cabin-3d' }
+            { text: '驾驶员监测 DMS 座舱试验台', link: '/vehicle-vision/development/dms-cabin-3d' },
+            { text: '乘员监测 OMS 多座位试验台', link: '/vehicle-vision/development/oms-cabin-3d' }
           ]
         },
         {

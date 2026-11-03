@@ -16,3 +16,5 @@
 交互式模型：[前视 ADAS 道路验证台](/vehicle-vision/development/adas-road-3d)（前车跟踪、相邻车切入、遮挡行人与几何真值距离）。
 
 交互式模型：[驾驶员监测 DMS 座舱试验台](/vehicle-vision/development/dms-cabin-3d)（座椅位置、驾驶员眼睛与近红外相机的几何关系，以及四类已知输入标签）。
+
+交互式模型：[乘员监测 OMS 多座位试验台](/vehicle-vision/development/oms-cabin-3d)（左中右座位区域、乘员与物品标签、遮挡不确定状态及无效相机输入）。

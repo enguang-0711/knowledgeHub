@@ -19,12 +19,18 @@
     "model:dms-cabin": "node tools/vehicle-vision-dms-cabin/build.mjs",
     "model:dms-cabin:verify": "node tools/vehicle-vision-dms-cabin/build.mjs --verify",
     "model:dms-cabin:audit": "node tools/vehicle-vision-dms-cabin/build.mjs --audit",
-    "docs:dev": "npm run model:adas-calibration && npm run model:surround-parking && npm run model:adas-road && npm run model:dms-cabin && vitepress dev docs",
-    "docs:build": "npm run model:adas-calibration && npm run model:surround-parking && npm run model:adas-road && npm run model:dms-cabin && vitepress build docs",
+    "model:oms-cabin": "node tools/vehicle-vision-oms-cabin/build.mjs",
+    "model:oms-cabin:verify": "node tools/vehicle-vision-oms-cabin/build.mjs --verify",
+    "model:oms-cabin:audit": "node tools/vehicle-vision-oms-cabin/build.mjs --audit",
+    "docs:dev": "npm run model:adas-calibration && npm run model:surround-parking && npm run model:adas-road && npm run model:dms-cabin && npm run model:oms-cabin && vitepress dev docs",
+    "docs:build": "npm run model:adas-calibration && npm run model:surround-parking && npm run model:adas-road && npm run model:dms-cabin && npm run model:oms-cabin && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "hooks:install": "git config core.hooksPath .githooks"
   },
   "devDependencies": {
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
   }
 }
