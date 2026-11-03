@@ -73,4 +73,4 @@
 
 ## 关联专题
 
-[视觉指标](/vehicle-vision/perception-tasks-metrics) · [场景覆盖](/vehicle-vision/scenario-coverage) · [端侧性能与 CI](/vehicle-vision/ecu-performance-ci)
+[视觉指标](/vehicle-vision/testing/perception-tasks-metrics) · [场景覆盖](/vehicle-vision/testing/scenario-coverage) · [端侧性能与 CI](/vehicle-vision/testing/ecu-performance-ci)

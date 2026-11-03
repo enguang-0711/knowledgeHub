@@ -10,24 +10,30 @@
 |---|---|---|
 | 测试分析与设计 | 需求拆解、风险识别、边界值、等价类、状态与场景覆盖 | [通用学习路线](/roadmap)，基础内容待继续扩写 |
 | 测试开发 | Python 项目结构、pytest、Robot Framework、适配器与数据驱动 | [自动化工程框架](/automation-framework) |
-| 质量度量 | 指标定义、分母、样本、趋势、基线与统计陷阱 | 现有指标页以语音系统为例，通用指标章节持续补充：[质量指标](/metrics) |
+| 质量度量 | 指标定义、分母、样本、趋势、基线与统计陷阱 | 现有指标页以语音系统为例，通用指标章节持续补充：[质量指标](/vehicle-voice/testing/metrics) |
 | 测试平台与 CI | 测试分层、流水线、工件、失败分类、趋势和门禁 | [CI 与质量趋势](/ci-quality) |
-| 可观测性与证据 | 日志、事件、界面、设备状态及多种证据的关联 | 现有案例偏车载：[多模态断言](/multimodal-assertions) |
+| 可观测性与证据 | 日志、事件、界面、设备状态及多种证据的关联 | 现有案例偏车载：[多模态断言](/vehicle-voice/testing/multimodal-assertions) |
 | AI 应用测试 | 生成、检索、评测集、裁判模型、数据治理和人工审核 | [大模型应用测试](/llm-testing) |
 
 ## 二、领域案例
 
 每个领域案例独立说明系统链路、专有术语、数据、接口、风险和验收方式。语音与视觉分别编写和维护，复用通用工程主干，不混用领域指标或测试数据。
 
-### 车载语音
+### 车载语音开发
 
-**开发内容线**覆盖系统架构、数字音频与 DSP、音频前端、唤醒/VAD、ASR、NLU、对话管理、TTS、车机集成和端侧部署。按[语音开发学习路线](/vehicle-voice-development-roadmap)学习，并通过[开发知识点目录](/vehicle-voice/development/)逐篇阅读独立专题。
+覆盖系统架构、数字音频与 DSP、音频前端、唤醒/VAD、ASR、NLU、对话管理、TTS、车机集成和端侧部署。按[语音开发学习路线](/vehicle-voice/development/roadmap)学习，并通过[开发知识点目录](/vehicle-voice/development/)逐篇阅读独立专题。
 
-**测试内容线**覆盖声学输入、唤醒、ASR/NLU、多轮对话、业务执行、HMI、车辆信号和 HIL。进入[语音测试专题导览](/vehicle-voice-testing)，按[语音测试学习路线](/vehicle-voice-roadmap)逐步学习。
+### 车载语音测试
 
-### 车载视觉
+覆盖声学输入、唤醒、ASR/NLU、多轮对话、业务执行、HMI、车辆信号和 HIL。进入[语音测试专题导览](/vehicle-voice/testing/)，按[语音测试学习路线](/vehicle-voice/testing/roadmap)逐步学习。
 
-独立内容线覆盖相机成像与标定、数据和标注、视觉任务指标、ODD 场景覆盖、前视 ADAS、环视/泊车、舱内 DMS/OMS、仿真回放、ECU 性能与 CI。进入[视觉案例导览](/vehicle-vision/)浏览专题；开发者可按[车载视觉开发学习路线](/vehicle-vision/development-roadmap)学习，并从[视觉开发知识点文档目录](/vehicle-vision/development/)逐篇阅读算法实现与车端部署专题；测试人员可按[视觉测试学习路线](/vehicle-vision/roadmap)学习评估和验证闭环。
+### 车载视觉开发
+
+覆盖前视 ADAS、环视/泊车、舱内 DMS/OMS 的成像几何、算法实现和车端部署。按[视觉开发学习路线](/vehicle-vision/development/roadmap)学习，并从[视觉开发知识点文档目录](/vehicle-vision/development/)逐篇阅读。
+
+### 车载视觉测试
+
+覆盖相机成像与标定、数据和标注、视觉任务指标、ODD 场景覆盖、仿真回放、ECU 性能与 CI。进入[视觉测试导览](/vehicle-vision/testing/)浏览专题，并按[视觉测试学习路线](/vehicle-vision/testing/roadmap)学习评估和验证闭环。
 
 前视 ADAS、环视/泊车和舱内视觉的输入、标签、业务风险和验收指标彼此不同，分别在独立文档中说明，不能用单一“视觉准确率”覆盖这些系统。
 
@@ -38,7 +44,7 @@ API/服务测试、Web 与移动端测试、性能与可靠性、安全与隐私
 ## 三、项目与知识资产
 
 - [车载案例导航](/vehicle-cases)：比较语音与视觉测试的边界和独立入口。
-- [实战项目](/projects)：把领域知识组合成从输入、执行、断言到报告的可验收练习；现有项目以车载语音为例。
+- [实战项目](/vehicle-voice/testing/projects)：把领域知识组合成从输入、执行、断言到报告的可验收练习；现有项目以车载语音为例。
 - [模板与检查清单](/templates)：测试用例、实验记录、缺陷报告、数据和发布检查。
 - [术语词典](/glossary)：跨主题术语，标注领域上下文和易混点。
 - [工具与资料](/tools-and-resources)：按任务选择工具并优先链接官方文档。

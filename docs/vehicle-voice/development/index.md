@@ -1,6 +1,6 @@
 # 车载语音开发知识点目录
 
-本目录把[车载语音开发学习路线](/vehicle-voice-development-roadmap)拆成可独立学习和验收的专题。建议先从系统边界、编程和信号处理开始，再依次学习音频前端、ASR/NLU/TTS、车载服务和端侧部署。每篇说明关键概念、工程流程、常见问题和练习。
+本目录把[车载语音开发学习路线](/vehicle-voice/development/roadmap)拆成可独立学习和验收的专题。建议先从系统边界、编程和信号处理开始，再依次学习音频前端、ASR/NLU/TTS、车载服务和端侧部署。每篇说明关键概念、工程流程、常见问题和练习。
 
 ## 系统与开发基础
 
@@ -36,14 +36,8 @@
 - [实时性能与优化](./performance-optimization)
 - [可靠性、隐私与数据闭环](./reliability-data-loop)
 
-## 配套路线与资料
+## 开发路线
 
-- [开发学习路线](/vehicle-voice-development-roadmap)
-- [语音测试学习路线](/vehicle-voice-roadmap)
-- [端到端语音架构与测试边界](/architecture)
-- [音频链路与声学测试](/audio-acoustics)
-- [ASR、NLU 与对话评测](/asr-nlu-dialogue)
-- [语料资产与 TTS 测试](/corpus-tts)
-- [车机、总线与 HIL 测试](/vehicle-integration)
+- [开发学习路线](/vehicle-voice/development/roadmap)
 
-开发专题解释如何构建算法和服务；配套测试页面说明如何验证输入、事件、总线、HMI 与业务状态。实时车机操作和车辆控制只应在项目授权、隔离且可恢复的环境中进行。
+本目录只组织语音软件、模型和车机功能的开发知识。测试内容由独立的测试路线和文档目录维护；开发与测试的总入口见[车载语音专题](/vehicle-voice/)。实时车机操作和车辆控制只应在项目授权、隔离且可恢复的环境中进行。

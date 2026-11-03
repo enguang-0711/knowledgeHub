@@ -27,4 +27,4 @@
 
 以一个目标检测或车道线功能建立原型，按目标尺寸、距离、昼夜和遮挡分析错误；增加连续视频回放，测量轨迹/几何稳定性和输出年龄。交付接口定义、错误样例及已知场景边界。
 
-**延伸阅读：**[前视 ADAS 专题](/vehicle-vision/adas-front-camera) · [目标检测](./object-detection) · [多目标跟踪](./tracking) · [场景覆盖与 ODD](/vehicle-vision/scenario-coverage)
+**延伸阅读：**[目标检测](./object-detection) · [多目标跟踪](./tracking) · [坐标变换、标定与时间同步](./camera-geometry-calibration-sync)

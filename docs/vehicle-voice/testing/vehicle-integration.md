@@ -14,7 +14,7 @@
 
 - **先修：**ADB、设备状态、日志和版本管理。
 - **重难点：**多设备要按序列号选择；刷机和清数据需显式维护流程，设备离线与产品失败要区别处理。
-- **学习文档：**[本专题详细说明](/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：Android ADB车机自动化测试logcat](https://search.bilibili.com/all?keyword=Android%20ADB%E8%BD%A6%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95logcat)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -30,7 +30,7 @@
 
 - **先修：**CAN 帧、DBC 解码、周期和有效位。
 - **重难点：**命令帧不是执行证明；校验状态反馈、信号有效位、稳定窗口和 DBC/车型版本。
-- **学习文档：**[本专题详细说明](/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：CAN DBC信号解析汽车测试](https://search.bilibili.com/all?keyword=CAN%20DBC%E4%BF%A1%E5%8F%B7%E8%A7%A3%E6%9E%90%E6%B1%BD%E8%BD%A6%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -42,7 +42,7 @@
 
 - **先修：**网络拓扑、服务发现、事件和超时。
 - **重难点：**网络可达不等于服务实例/版本正确；按项目协议核查发现、订阅、返回码和最终车辆状态。
-- **学习文档：**[本专题详细说明](/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：SOME IP DoIP汽车以太网测试](https://search.bilibili.com/all?keyword=SOME%20IP%20DoIP%E6%B1%BD%E8%BD%A6%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -54,7 +54,7 @@
 
 - **先修：**实时仿真、接口映射和安全联锁。
 - **重难点：**模型和通道映射会影响真实性；健康检查、资源独占、急停和恢复失败必须纳入执行判定。
-- **学习文档：**[本专题详细说明](/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：HIL硬件在环汽车测试台架](https://search.bilibili.com/all?keyword=HIL%E7%A1%AC%E4%BB%B6%E5%9C%A8%E7%8E%AF%E6%B1%BD%E8%BD%A6%E6%B5%8B%E8%AF%95%E5%8F%B0%E6%9E%B6)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -66,7 +66,7 @@
 
 - **先修：**时钟源、同步和 trace ID。
 - **重难点：**跨机器时间戳不能默认可比较；明确同步误差，必要时用硬件标记建立因果关系。
-- **学习文档：**[本专题详细说明](/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：汽车测试多设备时钟同步PTP trace ID](https://search.bilibili.com/all?keyword=%E6%B1%BD%E8%BD%A6%E6%B5%8B%E8%AF%95%E5%A4%9A%E8%AE%BE%E5%A4%87%E6%97%B6%E9%92%9F%E5%90%8C%E6%AD%A5PTP%20trace%20ID)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -78,5 +78,5 @@
 
 - **先修：**分布式状态同步、权限和最终一致性。
 - **重难点：**屏幕短暂延迟与永久不一致需要不同判据；定义同步期限、目标屏和多用户/音区权限。
-- **学习文档：**[本专题详细说明](/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/vehicle-integration)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：车载多屏同步HMI一致性测试](https://search.bilibili.com/all?keyword=%E8%BD%A6%E8%BD%BD%E5%A4%9A%E5%B1%8F%E5%90%8C%E6%AD%A5HMI%E4%B8%80%E8%87%B4%E6%80%A7%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。

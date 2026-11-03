@@ -89,4 +89,4 @@ AI 可用于候选标签、模糊样本筛选、近重复检测、属性预标�
 
 ## 关联专题
 
-[场景覆盖与 ODD](/vehicle-vision/scenario-coverage) · [感知任务与指标](/vehicle-vision/perception-tasks-metrics) · [仿真与回放](/vehicle-vision/simulation-replay)
+[场景覆盖与 ODD](/vehicle-vision/testing/scenario-coverage) · [感知任务与指标](/vehicle-vision/testing/perception-tasks-metrics) · [仿真与回放](/vehicle-vision/testing/simulation-replay)

@@ -79,4 +79,4 @@ v = f_y · y + c_y
 
 ## 关联专题
 
-[视觉任务与指标](/vehicle-vision/perception-tasks-metrics) · [场景覆盖](/vehicle-vision/scenario-coverage) · [环视与泊车视觉](/vehicle-vision/surround-view-parking)
+[视觉任务与指标](/vehicle-vision/testing/perception-tasks-metrics) · [场景覆盖](/vehicle-vision/testing/scenario-coverage) · [环视与泊车视觉](/vehicle-vision/testing/surround-view-parking)

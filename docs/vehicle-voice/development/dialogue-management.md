@@ -24,4 +24,4 @@
 
 实现包含补槽、改口、取消、超时和会话重置的状态机；为每轮记录输入、当前状态、槽位、动作和响应。注入重复与乱序事件，验证不会执行旧参数或将会话上下文泄漏到其他音区。
 
-**延伸阅读：**[ASR、NLU 与对话管理评测](/asr-nlu-dialogue) · [语音需求与系统架构](./system-architecture-and-requirements)
+**延伸阅读：**[NLU 意图与槽位](./nlu-intent-slots) · [语音需求与系统架构](./system-architecture-and-requirements)

@@ -15,7 +15,7 @@
 
 - **先修：**波形、频率和数字采样。
 - **重难点：**重采样和改文件头不是一回事；位深、编码、声道及削波都可能在模型调用前改变输入。
-- **学习文档：**[本专题详细说明](/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：数字音频采样率位深PCM基础](https://search.bilibili.com/all?keyword=%E6%95%B0%E5%AD%97%E9%9F%B3%E9%A2%91%E9%87%87%E6%A0%B7%E7%8E%87%E4%BD%8D%E6%B7%B1PCM%E5%9F%BA%E7%A1%80)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -34,7 +34,7 @@
 
 - **先修：**测试边界与音频 I/O。
 - **重难点：**要证明测试经过了哪些麦克风、AFE、唤醒和 ASR 路径；“自动播放了文件”不等于全链路声学覆盖。
-- **学习文档：**[本专题详细说明](/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：车载语音音频注入人工嘴测试](https://search.bilibili.com/all?keyword=%E8%BD%A6%E8%BD%BD%E8%AF%AD%E9%9F%B3%E9%9F%B3%E9%A2%91%E6%B3%A8%E5%85%A5%E4%BA%BA%E5%B7%A5%E5%98%B4%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -51,7 +51,7 @@
 
 - **先修：**测量、校准、实验变量控制。
 - **重难点：**播放器档位不是声压级；位置、增益、反射和校准有效期都要记录，回采可以验证实际送达条件。
-- **学习文档：**[本专题详细说明](/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：人工嘴声学测试声压级校准](https://search.bilibili.com/all?keyword=%E4%BA%BA%E5%B7%A5%E5%98%B4%E5%A3%B0%E5%AD%A6%E6%B5%8B%E8%AF%95%E5%A3%B0%E5%8E%8B%E7%BA%A7%E6%A0%A1%E5%87%86)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -71,7 +71,7 @@ ETSI ES 202 396-1 涉及背景噪声仿真技术与背景噪声数据库等内�
 
 - **先修：**功率比、分贝和噪声谱。
 - **重难点：**相同 SNR 的风噪、音乐和人声不是等价条件；同时描述频谱、时间变化、播放位置和测量点。
-- **学习文档：**[本专题详细说明](/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：车内噪声建模SNR语音识别测试](https://search.bilibili.com/all?keyword=%E8%BD%A6%E5%86%85%E5%99%AA%E5%A3%B0%E5%BB%BA%E6%A8%A1SNR%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -83,7 +83,7 @@ ETSI ES 202 396-1 涉及背景噪声仿真技术与背景噪声数据库等内�
 
 - **先修：**容器格式、哈希和质量检查。
 - **重难点：**自动修复会改变被测输入；原始资产不可变，任何重采样/降噪都产生带父哈希的新派生资产。
-- **学习文档：**[本专题详细说明](/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：FFmpeg WAV音频质量校验削波检测](https://search.bilibili.com/all?keyword=FFmpeg%20WAV%E9%9F%B3%E9%A2%91%E8%B4%A8%E9%87%8F%E6%A0%A1%E9%AA%8C%E5%89%8A%E6%B3%A2%E6%A3%80%E6%B5%8B)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -99,5 +99,5 @@ ETSI ES 202 396-1 涉及背景噪声仿真技术与背景噪声数据库等内�
 
 - **先修：**控制变量和测量系统分析。
 - **重难点：**测试条件变化可能来自音量、媒体状态、温度或缓存状态，而不是模型；记录并隔离混淆变量。
-- **学习文档：**[本专题详细说明](/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/audio-acoustics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：声学测试实验设计控制变量](https://search.bilibili.com/all?keyword=%E5%A3%B0%E5%AD%A6%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1%E6%8E%A7%E5%88%B6%E5%8F%98%E9%87%8F)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。

@@ -25,4 +25,4 @@
 
 在固定视频上实现或运行一个检测关联跟踪基线，输出轨迹、帧时间和关联状态；构造丢帧、遮挡和交叉场景，分析 ID 切换与轨迹恢复。说明状态重置和过期输出规则。
 
-**延伸阅读：**[视频时序与流式处理](./video-temporal-processing) · [视觉任务与评估指标](/vehicle-vision/perception-tasks-metrics)
+**延伸阅读：**[视频时序与流式处理](./video-temporal-processing) · [目标检测](./object-detection)

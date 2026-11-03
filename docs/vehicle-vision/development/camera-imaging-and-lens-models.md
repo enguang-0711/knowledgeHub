@@ -29,4 +29,4 @@ ISP 输出可随曝光策略、温度、HDR 模式、固件和摄像头批次变
 
 选取一组公开或授权的不同光照图像，比较亮度/对比度、过曝比例和目标清晰度；对普通镜头样例完成针孔模型去畸变，对鱼眼样例说明为何需要相应鱼眼模型。交付相机配置、参数版本和可视化。
 
-**专题入口：**[摄像头成像、坐标与标定](/vehicle-vision/camera-imaging-calibration) · [场景覆盖与 ODD](/vehicle-vision/scenario-coverage)
+**延伸阅读：**[图像格式与预处理](./image-formats-preprocessing) · [坐标变换、标定与时间同步](./camera-geometry-calibration-sync)

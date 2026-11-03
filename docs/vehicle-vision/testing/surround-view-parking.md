@@ -70,4 +70,4 @@
 
 ## 关联专题
 
-[成像与标定](/vehicle-vision/camera-imaging-calibration) · [视觉指标](/vehicle-vision/perception-tasks-metrics) · [场景覆盖](/vehicle-vision/scenario-coverage)
+[成像与标定](/vehicle-vision/testing/camera-imaging-calibration) · [视觉指标](/vehicle-vision/testing/perception-tasks-metrics) · [场景覆盖](/vehicle-vision/testing/scenario-coverage)

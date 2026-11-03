@@ -20,4 +20,4 @@
 
 把一个推理程序封装成可启动/停止的服务；测试正常输入、格式错误、超时和断流恢复。每条输出可关联输入帧及版本；并发运行时不乱序、不无限积压，停止后释放资源。
 
-**延伸阅读：**[视觉系统导览](/vehicle-vision/) · [仿真、回放与 SIL/HIL](/vehicle-vision/simulation-replay)
+**延伸阅读：**[功能需求与视觉系统架构](./system-architecture-and-requirements) · [视频时序与流式处理](./video-temporal-processing)

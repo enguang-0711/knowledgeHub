@@ -1,6 +1,6 @@
 # 软件测试与质量工程知识库
 
-这是一个中文、Markdown 优先的软件测试与质量工程学习知识库，覆盖测试设计、自动化工程、质量度量、CI 和 AI 应用测试。**车载语音自动化测试是当前已展开的行业专题之一，不是整个知识库的唯一范围。**站点使用 VitePress，GitHub Actions 自动构建并部署到 GitHub Pages。
+这是一个中文、Markdown 优先的软件测试与质量工程学习知识库，覆盖测试设计、自动化工程、质量度量、CI、AI 应用测试，以及车载语音和视觉的开发/测试专题。站点使用 VitePress，GitHub Actions 自动构建并部署到 GitHub Pages。
 
 ## 本地预览
 
@@ -39,9 +39,10 @@ npm run docs:preview
 - `docs/`：面向读者的知识正文，按通用能力、AI 测试和领域专题组织。
 - `docs/knowledge-map.md`：全站主题分类、内容范围与成熟度。
 - `docs/vehicle-cases.md`：车载语音、视觉两个独立案例的导航与边界说明。
-- `docs/vehicle-voice-testing.md`：车载语音行业专题导览。
-- `docs/vehicle-voice-development-roadmap.md`：车载语音开发学习路线；`docs/vehicle-voice/development/` 为逐知识点拆分的开发专题文档。
-- `docs/vehicle-vision/`：车载视觉专题，提供开发与测试路线；`development/` 按知识点拆分开发文档。
+- `docs/vehicle-voice/`：车载语音专题总览；`development/` 与 `testing/` 分别存放开发、测试路线和知识点文档。
+- `docs/vehicle-voice/development/`：车载语音开发路线及逐知识点拆分的开发专题文档。
+- `docs/vehicle-voice/testing/`：车载语音测试导览、路线、评估专题和实战项目。
+- `docs/vehicle-vision/`：车载视觉专题总览；`development/` 与 `testing/` 分别存放开发和测试路线及文档。
 - `docs/knowledge-base-plan.md`：知识库本身的分阶段建设、验收门槛和维护机制。
 - `docs/templates.md`：可复制的测试用例、语料清单、实验记录和缺陷报告模板。
 - `.github/workflows/pages.yml`：Pages 构建、PR 校验和部署流程。

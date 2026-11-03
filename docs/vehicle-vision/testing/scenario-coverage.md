@@ -83,4 +83,4 @@
 
 ## 关联专题
 
-[数据集与标注](/vehicle-vision/dataset-and-annotation) · [仿真与回放](/vehicle-vision/simulation-replay) · [前视 ADAS](/vehicle-vision/adas-front-camera)
+[数据集与标注](/vehicle-vision/testing/dataset-and-annotation) · [仿真与回放](/vehicle-vision/testing/simulation-replay) · [前视 ADAS](/vehicle-vision/testing/adas-front-camera)

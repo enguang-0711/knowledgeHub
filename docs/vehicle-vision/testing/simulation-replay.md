@@ -69,4 +69,4 @@ LLM 可把自然语言缺陷转成场景参数草案，生成后必须通过 sch
 
 ## 关联专题
 
-[场景覆盖](/vehicle-vision/scenario-coverage) · [前视 ADAS](/vehicle-vision/adas-front-camera) · [端侧性能与 CI](/vehicle-vision/ecu-performance-ci)
+[场景覆盖](/vehicle-vision/testing/scenario-coverage) · [前视 ADAS](/vehicle-vision/testing/adas-front-camera) · [端侧性能与 CI](/vehicle-vision/testing/ecu-performance-ci)

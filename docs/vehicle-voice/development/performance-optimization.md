@@ -22,4 +22,4 @@
 
 对固定语音套件执行端到端 profiling，找出主要耗时和缓冲等待。实施一项优化后，用相同设备、音频和负载比较延迟分位、WER/任务错误、丢块、内存和温度；不接受只报告模型推理时间的优化结论。
 
-**配套专题：**[ECU 性能、回归与 CI](/vehicle-vision/ecu-performance-ci)（通用端侧性能方法） · [车机、总线与 HIL](/vehicle-integration)
+**延伸阅读：**[模型部署与边缘推理](./model-deployment) · [车机语音系统集成](./system-integration)

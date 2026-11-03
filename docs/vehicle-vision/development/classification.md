@@ -18,4 +18,4 @@ Softmax 或 sigmoid 输出表示模型相对分数，不自动保证校准良好
 
 训练一个小型分类器，保存每样本 logits/预测/标签；比较两个阈值和一次类别不平衡处理方案。输出混淆矩阵、每类召回、拒识样本及错误图像，并解释阈值改变造成的 FP/FN 变化。
 
-**延伸阅读：**[视觉数据、训练与评估](./vision-data-and-training) · [视觉任务、指标与错误分析](/vehicle-vision/perception-tasks-metrics)
+**延伸阅读：**[视觉数据、训练与评估](./vision-data-and-training) · [目标检测](./object-detection)

@@ -22,4 +22,4 @@
 
 在 mock 或隔离台架中实现一个从音频流到低风险应用状态的完整 trace；注入音频路由切换、服务断连和车辆状态超时，确认错误可诊断、会话可清理且不会重复执行。
 
-**配套专题：**[车机、总线与 HIL](/vehicle-integration) · [端到端系统架构](/architecture)
+**延伸阅读：**[语音需求与系统架构](./system-architecture-and-requirements) · [车载语音业务与车辆接口](./vehicle-voice-functions)

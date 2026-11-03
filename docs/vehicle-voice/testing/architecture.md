@@ -23,7 +23,7 @@
 
 - **先修：**音频采样、客户端/服务端基本概念。
 - **重难点：**组件可能串行、并行或跨进程；要区分内部阶段成功与用户可见/车辆状态真正成功。每个边界都应有事件和时间戳。
-- **学习文档：**[本专题详细说明](/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：车载语音端到端系统架构](https://search.bilibili.com/all?keyword=%E8%BD%A6%E8%BD%BD%E8%AF%AD%E9%9F%B3%E7%AB%AF%E5%88%B0%E7%AB%AF%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -43,7 +43,7 @@
 
 - **先修：**系统边界、输入输出、观测点。
 - **重难点：**文件注入、软件注入和声学播放覆盖的路径不同；报告必须标出注入点及绕过的组件。
-- **学习文档：**[本专题详细说明](/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：SUT 测试台架系统边界](https://search.bilibili.com/all?keyword=SUT%20%E6%B5%8B%E8%AF%95%E5%8F%B0%E6%9E%B6%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -64,7 +64,7 @@
 
 - **先修：**Python 类、接口、依赖注入。
 - **重难点：**接口要暴露环境能力和限制；不要让 mock 的通过结果伪装成真实麦克风或车辆总线覆盖。
-- **学习文档：**[本专题详细说明](/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：Python 自动化测试适配器设计](https://search.bilibili.com/all?keyword=Python%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E9%80%82%E9%85%8D%E5%99%A8%E8%AE%BE%E8%AE%A1)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -86,7 +86,7 @@
 
 - **先修：**事件驱动测试、断言与证据独立性。
 - **重难点：**播报“成功”、业务请求被接受和车辆状态落地是三件事；用不同证据分别断言。
-- **学习文档：**[本专题详细说明](/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：车载语音端到端闭环测试](https://search.bilibili.com/all?keyword=%E8%BD%A6%E8%BD%BD%E8%AF%AD%E9%9F%B3%E7%AB%AF%E5%88%B0%E7%AB%AF%E9%97%AD%E7%8E%AF%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -98,7 +98,7 @@
 
 - **先修：**状态机、会话和事件时序。
 - **重难点：**上下文残留、并发和音区串扰往往是时序问题；测试数据必须包含会话 ID、音区 ID 和逐轮预期。
-- **学习文档：**[本专题详细说明](/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：语音助手多轮对话和多音区测试](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E5%8A%A9%E6%89%8B%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E5%92%8C%E5%A4%9A%E9%9F%B3%E5%8C%BA%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -115,5 +115,5 @@
 
 - **先修：**需求拆解和可观测性。
 - **重难点：**任何断言都要能区分产品失败、采集器失效和证据缺失；时间戳需标出时钟来源与误差。
-- **学习文档：**[本专题详细说明](/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/architecture)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：自动化测试可观测性与故障定位](https://search.bilibili.com/all?keyword=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7%E4%B8%8E%E6%95%85%E9%9A%9C%E5%AE%9A%E4%BD%8D)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。

@@ -26,4 +26,4 @@
 
 对固定音频比较两个解码配置或热词配置，保留逐样本候选、最终文本和时延。选择含近音词、数字和否定词的样例，判断错误来自模型还是解码/归一化。报告明确指出模型与解码器版本。
 
-**延伸阅读：**[ASR、NLU 与对话管理评测](/asr-nlu-dialogue) · [语音数据集与评估](./speech-data-evaluation)
+**延伸阅读：**[ASR 语料、训练与领域适配](./asr-training-adaptation) · [语音数据集与评估](./speech-data-evaluation)

@@ -26,4 +26,4 @@
 
 建立一个公开且许可明确的数据集 manifest；实现图像/标签 QA、重复哈希检查、按行程切分和分层评估。交付数据卡、训练配置、错误样例和复现命令。让另一个人能解释评估集为何独立以及指标分母是什么。
 
-**专题入口：**[数据集与标注质量](/vehicle-vision/dataset-and-annotation) · [视觉任务与评估指标](/vehicle-vision/perception-tasks-metrics) · [场景覆盖与 ODD](/vehicle-vision/scenario-coverage)
+**延伸阅读：**[深度学习基础与训练机制](./deep-learning-foundations) · [目标检测](./object-detection) · [语义与实例分割](./segmentation)

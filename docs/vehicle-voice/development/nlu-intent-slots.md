@@ -24,4 +24,4 @@
 
 为一个低风险功能定义 schema、意图集和槽位规则；训练或调用基线模型后输出结构化结果与校验错误。构造缺槽、非法值、否定、同义表达和歧义样本，报告每类错误并说明何时澄清/拒识。
 
-**延伸阅读：**[ASR、NLU 与对话管理评测](/asr-nlu-dialogue) · [车载语音业务与车辆接口](./vehicle-voice-functions)
+**延伸阅读：**[ASR 语料、训练与领域适配](./asr-training-adaptation) · [车载语音业务与车辆接口](./vehicle-voice-functions)

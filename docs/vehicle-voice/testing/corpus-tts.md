@@ -13,7 +13,7 @@
 
 - **先修：**测试集、回归集、覆盖与风险分层。
 - **重难点：**黄金回归集需稳定且独立；探索数据和模型调参数据不可悄悄混入验收集。
-- **学习文档：**[本专题详细说明](/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：语音测试语料库构建数据集划分](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E6%B5%8B%E8%AF%95%E8%AF%AD%E6%96%99%E5%BA%93%E6%9E%84%E5%BB%BA%E6%95%B0%E6%8D%AE%E9%9B%86%E5%88%92%E5%88%86)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -36,7 +36,7 @@
 
 - **先修：**结构化数据、schema 和数据血缘。
 - **重难点：**文本、音频、标签、合成参数、授权和版本需能关联；缺字段要显式拒绝，不能静默补默认值。
-- **学习文档：**[本专题详细说明](/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：语音数据集manifest元数据管理](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E6%95%B0%E6%8D%AE%E9%9B%86manifest%E5%85%83%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -50,7 +50,7 @@
 
 - **先修：**TTS、SSML、语音采样参数。
 - **重难点：**在线模型可能漂移；固化生成音频和参数。合成语音可以扩大覆盖，不能替代真人分布验证。
-- **学习文档：**[本专题详细说明](/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：edge-tts Azure TTS语音合成批量生成](https://search.bilibili.com/all?keyword=edge-tts%20Azure%20TTS%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E6%89%B9%E9%87%8F%E7%94%9F%E6%88%90)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -62,7 +62,7 @@
 
 - **先修：**训练/验证/测试切分和近重复检测。
 - **重难点：**同一说话人、相似句式或同一噪声底可能跨切分泄漏；按目标选择按说话人/文本/时间切分。
-- **学习文档：**[本专题详细说明](/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：语音识别测试集数据泄漏防止](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB%E6%B5%8B%E8%AF%95%E9%9B%86%E6%95%B0%E6%8D%AE%E6%B3%84%E6%BC%8F%E9%98%B2%E6%AD%A2)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -80,7 +80,7 @@ LLM 可以提供候选，但不能自行确认测试预期。对每个候选保�
 
 - **先修：**语义等价、意图槽位标注。
 - **重难点：**表面改写可能改变否定、数值、单位和执行对象；LLM 只能提候选，产品语义必须经规则/人工审查。
-- **学习文档：**[本专题详细说明](/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/corpus-tts)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：大模型生成语音测试用例同义句审核](https://search.bilibili.com/all?keyword=%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E8%AF%AD%E9%9F%B3%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E5%90%8C%E4%B9%89%E5%8F%A5%E5%AE%A1%E6%A0%B8)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -103,5 +103,5 @@ corpus/
 
 - **先修：**文件系统、内容哈希、数据清单和 Git 大文件存储概念。
 - **重难点：**manifest 描述的是资产来源和版本，不是权限本身；公开仓库只放许可清楚的资产，派生文件要能回溯到父文件和处理参数。
-- **学习文档：**[语料资产与 TTS 反向注入](/corpus-tts)、[模板与检查清单](/templates)、[工具与参考资料](/tools-and-resources)。
+- **学习文档：**[语料资产与 TTS 反向注入](/vehicle-voice/testing/corpus-tts)、[模板与检查清单](/templates)、[工具与参考资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：语音数据集 manifest 元数据版本管理](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E6%95%B0%E6%8D%AE%E9%9B%86%20manifest%20%E5%85%83%E6%95%B0%E6%8D%AE%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86)。

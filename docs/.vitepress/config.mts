@@ -17,7 +17,7 @@ export default defineConfig({
       { text: '学习路线', link: '/roadmap' },
       { text: '工程能力', link: '/automation-framework' },
       { text: '领域案例', link: '/vehicle-cases' },
-      { text: '实战项目', link: '/projects' },
+      { text: '实战项目', link: '/vehicle-voice/testing/projects' },
       { text: '知识库建设', link: '/knowledge-base-plan' },
       { text: '术语词典', link: '/glossary' },
       { text: '工具与资料', link: '/tools-and-resources' }
@@ -50,38 +50,60 @@ export default defineConfig({
           ]
         },
         {
-          text: '领域案例：车载语音',
+          text: '车载语音专题',
           items: [
-            { text: '语音开发学习路线', link: '/vehicle-voice-development-roadmap' },
-            { text: '语音开发知识点文档', link: '/vehicle-voice/development/' },
-            { text: '专题导览', link: '/vehicle-voice-testing' },
-            { text: '专题学习路线', link: '/vehicle-voice-roadmap' },
-            { text: '端到端架构与测试边界', link: '/architecture' },
-            { text: '音频链路与声学测试', link: '/audio-acoustics' },
-            { text: '语料资产与 TTS 注入', link: '/corpus-tts' },
-            { text: 'ASR、NLU 与对话管理', link: '/asr-nlu-dialogue' },
-            { text: '质量指标与统计方法', link: '/metrics' },
-            { text: '车机、总线与 HIL', link: '/vehicle-integration' },
-            { text: '日志、UI 与多模态断言', link: '/multimodal-assertions' },
-            { text: '实战项目与验收', link: '/projects' }
+            { text: '专题总览', link: '/vehicle-voice/' }
           ]
         },
         {
-          text: '领域案例：车载视觉',
+          text: '车载语音开发',
           items: [
-            { text: '视觉案例导览', link: '/vehicle-vision/' },
-            { text: '视觉开发学习路线', link: '/vehicle-vision/development-roadmap' },
-            { text: '视觉开发知识点文档', link: '/vehicle-vision/development/' },
-            { text: '视觉测试学习路线', link: '/vehicle-vision/roadmap' },
-            { text: '成像、坐标与标定', link: '/vehicle-vision/camera-imaging-calibration' },
-            { text: '数据集与标注质量', link: '/vehicle-vision/dataset-and-annotation' },
-            { text: '感知任务与评估指标', link: '/vehicle-vision/perception-tasks-metrics' },
-            { text: '场景覆盖与 ODD', link: '/vehicle-vision/scenario-coverage' },
-            { text: '前视 ADAS 感知', link: '/vehicle-vision/adas-front-camera' },
-            { text: '环视与泊车视觉', link: '/vehicle-vision/surround-view-parking' },
-            { text: '舱内 DMS / OMS', link: '/vehicle-vision/cabin-vision-dms-oms' },
-            { text: '仿真、回放与 SIL/HIL', link: '/vehicle-vision/simulation-replay' },
-            { text: 'ECU 性能、回归与 CI', link: '/vehicle-vision/ecu-performance-ci' }
+            { text: '开发学习路线', link: '/vehicle-voice/development/roadmap' },
+            { text: '开发知识点文档', link: '/vehicle-voice/development/' }
+          ]
+        },
+        {
+          text: '车载语音测试',
+          items: [
+            { text: '测试专题导览', link: '/vehicle-voice/testing/' },
+            { text: '测试学习路线', link: '/vehicle-voice/testing/roadmap' },
+            { text: '端到端架构与测试边界', link: '/vehicle-voice/testing/architecture' },
+            { text: '音频链路与声学测试', link: '/vehicle-voice/testing/audio-acoustics' },
+            { text: '语料资产与 TTS 注入', link: '/vehicle-voice/testing/corpus-tts' },
+            { text: 'ASR、NLU 与对话管理', link: '/vehicle-voice/testing/asr-nlu-dialogue' },
+            { text: '质量指标与统计方法', link: '/vehicle-voice/testing/metrics' },
+            { text: '车机、总线与 HIL', link: '/vehicle-voice/testing/vehicle-integration' },
+            { text: '日志、UI 与多模态断言', link: '/vehicle-voice/testing/multimodal-assertions' },
+            { text: '实战项目与验收', link: '/vehicle-voice/testing/projects' }
+          ]
+        },
+        {
+          text: '车载视觉专题',
+          items: [
+            { text: '专题总览', link: '/vehicle-vision/' }
+          ]
+        },
+        {
+          text: '车载视觉开发',
+          items: [
+            { text: '视觉开发学习路线', link: '/vehicle-vision/development/roadmap' },
+            { text: '视觉开发知识点文档', link: '/vehicle-vision/development/' }
+          ]
+        },
+        {
+          text: '车载视觉测试',
+          items: [
+            { text: '视觉测试专题导览', link: '/vehicle-vision/testing/' },
+            { text: '视觉测试学习路线', link: '/vehicle-vision/testing/roadmap' },
+            { text: '成像、坐标与标定', link: '/vehicle-vision/testing/camera-imaging-calibration' },
+            { text: '数据集与标注质量', link: '/vehicle-vision/testing/dataset-and-annotation' },
+            { text: '感知任务与评估指标', link: '/vehicle-vision/testing/perception-tasks-metrics' },
+            { text: '场景覆盖与 ODD', link: '/vehicle-vision/testing/scenario-coverage' },
+            { text: '前视 ADAS 感知', link: '/vehicle-vision/testing/adas-front-camera' },
+            { text: '环视与泊车视觉', link: '/vehicle-vision/testing/surround-view-parking' },
+            { text: '舱内 DMS / OMS', link: '/vehicle-vision/testing/cabin-vision-dms-oms' },
+            { text: '仿真、回放与 SIL/HIL', link: '/vehicle-vision/testing/simulation-replay' },
+            { text: 'ECU 性能、回归与 CI', link: '/vehicle-vision/testing/ecu-performance-ci' }
           ]
         }
       ]

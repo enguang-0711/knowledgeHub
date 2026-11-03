@@ -5,7 +5,7 @@
 ## 术语拆解
 
 - **ECU（Electronic Control Unit）**：车载电子控制单元。计算平台、加速器、内存、操作系统和软件栈因项目而异。
-- **SIL/HIL**：软件在环/硬件在环；边界和用法见[仿真与回放专题](/vehicle-vision/simulation-replay)。
+- **SIL/HIL**：软件在环/硬件在环；边界和用法见[仿真与回放专题](/vehicle-vision/testing/simulation-replay)。
 - **端到端时延**：明确起点和终点的完成时间。可以是传感器帧到感知消息，也可以是输入到 HMI；报告必须给出边界。
 - **p50/p95/p99**：时延分布分位数。p99 表示 99% 观测值不超过该值，仍需说明样本量、预热和异常值处理。
 - **热降频/thermal throttling**：温度或功耗管理降低频率，可能造成长时间运行的帧率和时延退化。
@@ -89,4 +89,4 @@ LLM 可以归纳日志、聚类新增错误帧、对比缺陷报告和提出根�
 
 ## 关联专题
 
-[视觉指标](/vehicle-vision/perception-tasks-metrics) · [仿真与回放](/vehicle-vision/simulation-replay) · [通用 CI 与质量趋势](/ci-quality)
+[视觉指标](/vehicle-vision/testing/perception-tasks-metrics) · [仿真与回放](/vehicle-vision/testing/simulation-replay) · [通用 CI 与质量趋势](/ci-quality)

@@ -85,4 +85,4 @@ FCW/AEB、车道保持、泊车或驾驶员监测要定义功能级事件和独�
 
 ## 关联专题
 
-[数据集与标注](/vehicle-vision/dataset-and-annotation) · [前视 ADAS](/vehicle-vision/adas-front-camera) · [DMS/OMS](/vehicle-vision/cabin-vision-dms-oms) · [端侧性能](/vehicle-vision/ecu-performance-ci)
+[数据集与标注](/vehicle-vision/testing/dataset-and-annotation) · [前视 ADAS](/vehicle-vision/testing/adas-front-camera) · [DMS/OMS](/vehicle-vision/testing/cabin-vision-dms-oms) · [端侧性能](/vehicle-vision/testing/ecu-performance-ci)

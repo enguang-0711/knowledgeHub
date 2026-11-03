@@ -17,7 +17,7 @@
 
 - **先修：**观测点、独立性和验证目标。
 - **重难点：**日志、服务和 UI 可能来自同一缓存数据源，不一定是独立证据；说明证据之间的因果/独立关系。
-- **学习文档：**[本专题详细说明](/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：软件测试多模态断言证据独立性](https://search.bilibili.com/all?keyword=%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%A4%9A%E6%A8%A1%E6%80%81%E6%96%AD%E8%A8%80%E8%AF%81%E6%8D%AE%E7%8B%AC%E7%AB%8B%E6%80%A7)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -29,7 +29,7 @@
 
 - **先修：**结构化日志、事件 schema 和异步等待。
 - **重难点：**依赖易变文案会脆弱；处理乱序、重复、缓冲延迟，并保留原始日志与解析结果。
-- **学习文档：**[本专题详细说明](/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：结构化日志事件驱动自动化测试](https://search.bilibili.com/all?keyword=%E7%BB%93%E6%9E%84%E5%8C%96%E6%97%A5%E5%BF%97%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -50,7 +50,7 @@
 
 - **先修：**图像处理、ROI、置信度和控件树。
 - **重难点：**优先语义控件状态；OCR 需要多帧稳定确认、动态区域掩码和低置信度人工复核。
-- **学习文档：**[本专题详细说明](/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：OpenCV OCR汽车HMI自动化测试](https://search.bilibili.com/all?keyword=OpenCV%20OCR%E6%B1%BD%E8%BD%A6HMI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -62,7 +62,7 @@
 
 - **先修：**信号周期、有效性、服务生命周期。
 - **重难点：**初值恰好等于目标、无效位或错误 ECU 都可能导致假通过；定义更新窗口、稳定时间和数据源版本。
-- **学习文档：**[本专题详细说明](/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：CAN信号断言稳定窗口自动化](https://search.bilibili.com/all?keyword=CAN%E4%BF%A1%E5%8F%B7%E6%96%AD%E8%A8%80%E7%A8%B3%E5%AE%9A%E7%AA%97%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -81,7 +81,7 @@
 
 - **先修：**因果链、多重观测与冲突处理。
 - **重难点：**同一业务链上的重复日志不构成独立验证；证据冲突应输出冲突状态并保留全部材料。
-- **学习文档：**[本专题详细说明](/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：车载语音业务状态多模态交叉验证](https://search.bilibili.com/all?keyword=%E8%BD%A6%E8%BD%BD%E8%AF%AD%E9%9F%B3%E4%B8%9A%E5%8A%A1%E7%8A%B6%E6%80%81%E5%A4%9A%E6%A8%A1%E6%80%81%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -93,5 +93,5 @@
 
 - **先修：**错误模型、分类边界和不确定状态。
 - **重难点：**测试结果不能只有 pass/fail；区分产品、环境、数据、证据和判定器故障，并避免静默忽略。
-- **学习文档：**[本专题详细说明](/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/multimodal-assertions)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：自动化测试失败分类根因分析](https://search.bilibili.com/all?keyword=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%A4%B1%E8%B4%A5%E5%88%86%E7%B1%BB%E6%A0%B9%E5%9B%A0%E5%88%86%E6%9E%90)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。

@@ -31,4 +31,4 @@
 
 手算一个从车体坐标到相机坐标再到图像像素的变换，编程复现并对照结果；测试正向/逆向变换、单位变化和边界点。训练一个小模型时绘制训练/验证损失和指标曲线，解释过拟合或不收敛的可能原因。
 
-**配套专题：**[摄像头成像、坐标与标定](/vehicle-vision/camera-imaging-calibration) · [视觉任务、指标与错误分析](/vehicle-vision/perception-tasks-metrics)
+**延伸阅读：**[相机成像与镜头模型](./camera-imaging-and-lens-models) · [坐标变换、标定与时间同步](./camera-geometry-calibration-sync)

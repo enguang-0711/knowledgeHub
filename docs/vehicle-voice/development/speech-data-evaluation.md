@@ -22,4 +22,4 @@ WER 基于替换、删除、插入总数除以参考词数；CER 使用字符为
 
 构建音频/文本 manifest 和归一化脚本；用小型人工核验集计算 WER/CER，并输出每样本 S/D/I 错误。对比两种归一规则，说明分数变化是识别改进还是评估口径变化。
 
-**延伸阅读：**[质量指标与统计方法](/metrics) · [语料资产与 TTS 测试](/corpus-tts) · [ASR、NLU 与对话评测](/asr-nlu-dialogue)
+**延伸阅读：**[ASR 语料、训练与领域适配](./asr-training-adaptation) · [ASR 模型与解码](./asr-models-decoding)

@@ -24,4 +24,4 @@
 
 用样例标定参数构造相机到车体的变换；投影已知三维点并检查误差。人为交换变换方向、改错单位或加入时间偏差，观察错误形态。产物需包括坐标定义、参数版本、误差报告和复现命令。
 
-**学习资料：**[OpenCV 相机标定教程](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html) · [摄像头成像、坐标与标定专题](/vehicle-vision/camera-imaging-calibration)
+**学习资料：**[OpenCV 相机标定教程](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html) · [相机成像与镜头模型](./camera-imaging-and-lens-models)

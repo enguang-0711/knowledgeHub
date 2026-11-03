@@ -24,4 +24,4 @@
 
 实现一个有限状态原型：Idle → Wake → Listening → Endpoint → Final，并加入取消和超时。对同一波形扫不同阈值/等待时间，绘制误触发、漏检和端点延迟之间的变化；交付状态日志和边界样例。
 
-**延伸阅读：**[ASR、NLU 与对话管理评测](/asr-nlu-dialogue) · [流式语音服务与交互协议](./streaming-voice-services)
+**延伸阅读：**[ASR 模型与解码](./asr-models-decoding) · [流式语音服务与交互协议](./streaming-voice-services)

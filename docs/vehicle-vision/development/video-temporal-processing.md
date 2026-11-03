@@ -27,4 +27,4 @@
 
 构造一个视频回放服务，统计每阶段延迟、p50/p95 数据年龄、帧丢失、乱序和队列深度。注入处理变慢、帧间隔变化和相机重连，验证系统按契约处理状态和恢复。
 
-**专题入口：**[仿真、回放与 SIL/HIL](/vehicle-vision/simulation-replay) · [ECU 性能、回归与 CI](/vehicle-vision/ecu-performance-ci)
+**延伸阅读：**[视觉系统集成](./system-integration) · [端到端性能剖析](./performance-profiling)

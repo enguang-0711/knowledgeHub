@@ -25,4 +25,4 @@
 
 构建一个 mock 空调或媒体服务：输入结构化意图，校验参数，改变模拟状态并返回事件。测试非法温度、未知媒体、重复请求、超时、状态反馈不一致和拒绝执行。日志应能串联语音请求与最终状态。
 
-**延伸阅读：**[车机、总线与 HIL](/vehicle-integration) · [多模态断言](/multimodal-assertions) · [车载语音测试专题](/vehicle-voice-testing)
+**延伸阅读：**[对话管理与上下文状态](./dialogue-management) · [车机语音系统集成](./system-integration)

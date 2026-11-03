@@ -25,4 +25,4 @@
 
 为视频回放程序增加阶段计时和帧 ID；输出 p50/p95、帧率、丢帧和队列深度。在输入速率高于处理能力时验证队列策略，并用 profiler 找出至少一个实际瓶颈。交付完整测量配置与可复现结果。
 
-**延伸阅读：**[ECU 性能、回归与 CI](/vehicle-vision/ecu-performance-ci) · [仿真、回放与 SIL/HIL](/vehicle-vision/simulation-replay)
+**延伸阅读：**[端侧优化与量化](./edge-optimization) · [模型导出与推理部署](./model-export-inference)

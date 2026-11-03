@@ -1,6 +1,6 @@
 # 车载视觉开发知识点目录
 
-本目录把[车载视觉开发学习路线](/vehicle-vision/development-roadmap)拆成可单独阅读和练习的专题文档。建议先从系统和工程基础开始，再学习成像几何、算法、领域方向和端侧交付。每篇文档包含关键概念、工程检查点、常见问题和练习；完成标准以能解释、实现和定位问题为主。
+本目录把[车载视觉开发学习路线](/vehicle-vision/development/roadmap)拆成可单独阅读和练习的专题文档。建议先从系统和工程基础开始，再学习成像几何、算法、领域方向和端侧交付。每篇文档包含关键概念、工程检查点、常见问题和练习；完成标准以能解释、实现和定位问题为主。
 
 ## 系统与工程基础
 
@@ -43,13 +43,8 @@
 - [视觉系统集成](./system-integration)
 - [可靠性、可观测性与数据闭环](./reliability-data-loop)
 
-## 配套路线与资料
+## 开发路线
 
-- [开发学习路线](/vehicle-vision/development-roadmap)
-- [视觉测试学习路线](/vehicle-vision/roadmap)
-- [摄像头成像、坐标与标定](/vehicle-vision/camera-imaging-calibration)
-- [视觉任务与评估指标](/vehicle-vision/perception-tasks-metrics)
-- [数据集与标注质量](/vehicle-vision/dataset-and-annotation)
-- [场景覆盖与 ODD](/vehicle-vision/scenario-coverage)
+- [开发学习路线](/vehicle-vision/development/roadmap)
 
-开发知识点说明如何构建算法和系统；配套测试专题说明如何验证输入、输出和运行行为。具体项目的接口、硬件、数据授权及验收约束以项目正式定义为准。
+本目录只组织视觉算法、数据管线、模型和车端功能的开发知识。测试内容由独立的测试路线和专题目录维护；开发与测试的总入口见[车载视觉专题](/vehicle-vision/)。具体项目的接口、硬件和数据授权约束以项目正式定义为准。

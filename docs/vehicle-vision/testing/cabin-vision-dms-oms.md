@@ -68,4 +68,4 @@
 
 ## 关联专题
 
-[视觉任务与指标](/vehicle-vision/perception-tasks-metrics) · [数据集与标注](/vehicle-vision/dataset-and-annotation) · [端侧性能与 CI](/vehicle-vision/ecu-performance-ci)
+[视觉任务与指标](/vehicle-vision/testing/perception-tasks-metrics) · [数据集与标注](/vehicle-vision/testing/dataset-and-annotation) · [端侧性能与 CI](/vehicle-vision/testing/ecu-performance-ci)

@@ -22,4 +22,4 @@
 
 实现 mock 流式 ASR/TTS 服务，模拟延迟、重复、丢失、乱序、取消和重连。使用事件日志确认会话隔离、final 唯一性、取消后无副作用和队列时限；报告事件时延与音频数据年龄。
 
-**配套资料：**[端到端语音架构](/architecture) · [车机、总线与 HIL](/vehicle-integration)
+**延伸阅读：**[语音需求与系统架构](./system-architecture-and-requirements) · [车机语音系统集成](./system-integration)

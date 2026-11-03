@@ -24,4 +24,4 @@
 
 模拟音频断流、服务超时和重启，验证状态、反馈和恢复；再跟踪一条授权问题样本从收集、审核、入库、训练/回归到发布的完整血缘。产物包括版本清单、访问/留存规则和已知限制。
 
-**配套专题：**[车载语音测试学习路线](/vehicle-voice-roadmap) · [语料资产与 TTS](/corpus-tts) · [多模态断言](/multimodal-assertions)
+**延伸阅读：**[ASR 语料、训练与领域适配](./asr-training-adaptation) · [语音模型部署与边缘推理](./model-deployment) · [车机语音系统集成](./system-integration)

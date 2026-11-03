@@ -1,6 +1,6 @@
 # 车载视觉开发学习路线
 
-这条路线面向希望从视觉算法学习走到车端落地的开发者，覆盖基础编程、图像与几何、视觉算法、深度学习、数据训练、模型部署和系统集成。它与[车载视觉测试学习路线](/vehicle-vision/roadmap)互补：开发路线关注“怎样构建并交付视觉功能”，测试路线关注“怎样证明功能在目标场景和设备上满足要求”。
+这条路线面向希望从视觉算法学习走到车端落地的开发者，覆盖基础编程、图像与几何、视觉算法、深度学习、数据训练、模型部署和系统集成。本文只组织开发知识；测试路线和专题文档单独维护，内容总览见[车载视觉专题](/vehicle-vision/)。
 
 建议每周投入 8–12 小时，按阶段产物推进。已有基础的学习者可以压缩熟悉阶段，但每个阶段都应留下可运行的代码、实验记录或设计说明。车载视觉不是单一算法方向，尽早选择前视 ADAS、环视/泊车或舱内 DMS/OMS 作为主线。
 
@@ -43,7 +43,7 @@
 
 **练习与验收：**选一个明确功能，写出输入、输出、运行频率、目标硬件、可接受失效行为和待确认约束；为每个输出找到可以检查的可视化或日志。
 
-**专题入口：**[前视 ADAS](/vehicle-vision/adas-front-camera) · [环视与泊车](/vehicle-vision/surround-view-parking) · [舱内 DMS/OMS](/vehicle-vision/cabin-vision-dms-oms)
+**开发知识点：**[前视 ADAS 感知开发](./adas-perception-development) · [环视与泊车视觉开发](./surround-view-development) · [舱内 DMS/OMS 视觉开发](./cabin-vision-development)
 
 **知识点文档：**[功能需求与视觉系统架构](/vehicle-vision/development/system-architecture-and-requirements)
 
@@ -99,7 +99,7 @@
 
 **学习资料：**[OpenCV 相机标定教程](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html) · [OpenCV 图像处理教程](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
 
-**专题入口：**[摄像头成像、坐标与标定](/vehicle-vision/camera-imaging-calibration)
+**知识点文档：**[相机成像与镜头模型](/vehicle-vision/development/camera-imaging-and-lens-models) · [坐标变换、标定与时间同步](/vehicle-vision/development/camera-geometry-calibration-sync)
 
 **知识点文档：**[图像格式与预处理](/vehicle-vision/development/image-formats-preprocessing) · [相机成像与镜头模型](/vehicle-vision/development/camera-imaging-and-lens-models) · [坐标变换、标定与时间同步](/vehicle-vision/development/camera-geometry-calibration-sync)
 
@@ -166,7 +166,7 @@
 
 **学习资料：**[PyTorch Tutorials](https://pytorch.org/tutorials/) · [COCO 评估说明](https://cocodataset.org/#detection-eval)
 
-**专题入口：**[视觉任务与评估指标](/vehicle-vision/perception-tasks-metrics) · [数据集与标注质量](/vehicle-vision/dataset-and-annotation)
+**知识点文档：**[视觉数据、训练与评估](/vehicle-vision/development/vision-data-and-training) · [目标检测](/vehicle-vision/development/object-detection) · [语义与实例分割](/vehicle-vision/development/segmentation)
 
 **知识点文档：**[深度学习基础与训练机制](/vehicle-vision/development/deep-learning-foundations) · [视觉数据、训练与评估](/vehicle-vision/development/vision-data-and-training) · [图像分类](/vehicle-vision/development/classification) · [目标检测](/vehicle-vision/development/object-detection) · [语义与实例分割](/vehicle-vision/development/segmentation) · [多目标跟踪](/vehicle-vision/development/tracking) · [关键点与姿态估计](/vehicle-vision/development/keypoints-pose) · [深度估计与几何感知](/vehicle-vision/development/depth-estimation-geometry)
 
@@ -227,7 +227,7 @@
 
 **练习与验收：**围绕一个可描述的功能需求做原型，展示输入、输出、失败样例、适用范围以及无法处理的情形；把算法输出与下游接口契约对应起来。为主线维护一张“输入条件—算法模块—输出—风险—验证证据”表，避免把 ADAS、环视和 DMS 的类别、几何或验收方式混成一套。
 
-**学习资料：**[场景覆盖与 ODD](/vehicle-vision/scenario-coverage) · [视觉系统测试导览](/vehicle-vision/)
+**开发知识点：**[视觉数据、训练与评估](/vehicle-vision/development/vision-data-and-training) · [可靠性、可观测性与数据闭环](/vehicle-vision/development/reliability-data-loop)
 
 ## 阶段 6：模型导出、端侧部署与优化
 
@@ -253,7 +253,7 @@
 
 **学习资料：**[ONNX 文档](https://onnx.ai/onnx/) · [NVIDIA TensorRT 文档](https://docs.nvidia.com/deeplearning/tensorrt/latest/)（使用其他平台时改读对应厂商 SDK 文档）
 
-**专题入口：**[ECU 性能、回归与 CI](/vehicle-vision/ecu-performance-ci)
+**开发知识点：**[端到端性能剖析](/vehicle-vision/development/performance-profiling)
 
 **知识点文档：**[模型导出与推理部署](/vehicle-vision/development/model-export-inference) · [端侧优化与量化](/vehicle-vision/development/edge-optimization) · [端到端性能剖析](/vehicle-vision/development/performance-profiling)
 
@@ -279,7 +279,7 @@
 
 **练习与验收：**建立一个最小端到端版本流水线，包含构建、固定数据回归、机器可读指标、部署包版本和故障日志；模拟缺帧、延迟乱序、相机断流或超时，确认系统能报告状态并按设计处理。让另一位开发者按文档重跑，并从日志追踪一个输入帧对应的处理阶段和最终输出。
 
-**专题入口：**[仿真、回放与 SIL/HIL](/vehicle-vision/simulation-replay) · [视觉测试学习路线](/vehicle-vision/roadmap)
+**开发知识点：**[视频时序与流式处理](/vehicle-vision/development/video-temporal-processing) · [视觉系统集成](/vehicle-vision/development/system-integration)
 
 **知识点文档：**[视觉系统集成](/vehicle-vision/development/system-integration) · [可靠性、可观测性与数据闭环](/vehicle-vision/development/reliability-data-loop)
 

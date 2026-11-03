@@ -28,4 +28,4 @@
 
 实现一个 WAV/PCM 检查器，输出格式、时长、通道、峰值、RMS、静音和哈希；用已知频率信号验证重采样后的时长和音调；对错误头信息、空文件和削波输入给出明确错误。
 
-**延伸阅读：**[音频链路、声学和注入](/audio-acoustics) · [torchaudio Tutorials](https://pytorch.org/audio/stable/tutorials.html)
+**延伸阅读：**[车内声学与音频前端](./acoustics-audio-front-end) · [torchaudio Tutorials](https://pytorch.org/audio/stable/tutorials.html)

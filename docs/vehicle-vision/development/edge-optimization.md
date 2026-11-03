@@ -23,4 +23,4 @@ FP32、FP16、INT8 等精度模式在速度、内存和数值误差间取舍。I
 
 对一个部署模型建立 FP32/FP16 或 INT8 对比，记录目标硬件、软件版本、校准集、精度分层、p50/p95 延迟、内存和温度。分析一项精度退化，决定接受、回退还是调整方案，并给出依据。
 
-**相关专题：**[ECU 性能、回归与 CI](/vehicle-vision/ecu-performance-ci) · [模型导出与推理部署](./model-export-inference)
+**延伸阅读：**[模型导出与推理部署](./model-export-inference) · [端到端性能剖析](./performance-profiling)

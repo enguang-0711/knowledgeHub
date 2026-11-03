@@ -25,4 +25,4 @@
 
 对一个公开样例说明深度定义和尺度来源；选取已知距离点，完成像素到车体坐标变换并统计误差。构造无效深度、边界和远距离切片，记录误差分布与限制。
 
-**配套专题：**[摄像头成像、坐标与标定](/vehicle-vision/camera-imaging-calibration) · [视觉任务与评估指标](/vehicle-vision/perception-tasks-metrics)
+**延伸阅读：**[坐标变换、标定与时间同步](./camera-geometry-calibration-sync) · [视觉数据、训练与评估](./vision-data-and-training)

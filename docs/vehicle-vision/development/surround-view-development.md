@@ -22,4 +22,4 @@
 
 利用公开或授权的多摄像头样例，建立标定、去畸变和地面映射流程；用已知地面点检查误差。然后注入一路相机延迟/断流，观察拼接、状态提示和恢复。保存参数版本、可视化、延迟和错误边界。
 
-**延伸阅读：**[环视与泊车专题](/vehicle-vision/surround-view-parking) · [坐标变换、标定与时间同步](./camera-geometry-calibration-sync)
+**延伸阅读：**[坐标变换、标定与时间同步](./camera-geometry-calibration-sync) · [相机成像与镜头模型](./camera-imaging-and-lens-models)

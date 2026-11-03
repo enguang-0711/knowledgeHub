@@ -20,4 +20,4 @@ IoU 对每类统计交并比，mIoU 再按指定规则对类别平均。类别�
 
 检查一组图像-mask 对的尺寸、类别值和空区域；训练或运行一个分割基线，计算每类 IoU 并保存边界可视化。人为改变一次 mask 插值方式，说明标签值和指标怎样受影响。
 
-**延伸阅读：**[视觉数据、训练与评估](./vision-data-and-training) · [视觉任务与评估指标](/vehicle-vision/perception-tasks-metrics)
+**延伸阅读：**[视觉数据、训练与评估](./vision-data-and-training) · [深度学习基础与训练机制](./deep-learning-foundations)

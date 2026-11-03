@@ -1,6 +1,6 @@
 # 车载语音质量指标与统计方法
 
-本页是[车载语音专题](/vehicle-voice-testing)中的专项指标说明，重点涵盖语音识别、语义理解、唤醒和端到端时延。通用指标设计的原则是：指标必须附带定义、分母、测试集/数据版本、切分维度、排除规则和置信信息；单个汇总百分数不能说明系统在哪些场景失效。
+本页是[车载语音专题](/vehicle-voice/testing/)中的专项指标说明，重点涵盖语音识别、语义理解、唤醒和端到端时延。通用指标设计的原则是：指标必须附带定义、分母、测试集/数据版本、切分维度、排除规则和置信信息；单个汇总百分数不能说明系统在哪些场景失效。
 
 ## ASR：WER 与 CER
 
@@ -19,7 +19,7 @@ CER = (S + D + I) / N_characters
 
 - **先修：**字符串编辑距离、文本规范化。
 - **重难点：**中文分词、归一化和聚合口径会改变结果；固定 normalizer/tokenizer 版本，同时保留逐条 S/D/I 对齐。
-- **学习文档：**[本专题详细说明](/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：WER CER 中文语音识别评测](https://search.bilibili.com/all?keyword=WER%20CER%20%E4%B8%AD%E6%96%87%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB%E8%AF%84%E6%B5%8B)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -33,7 +33,7 @@ CER = (S + D + I) / N_characters
 
 - **先修：**混淆矩阵、TP/FP/FN。
 - **重难点：**类别不平衡时 accuracy 会掩盖少数关键意图；分别报告 macro/micro、关键槽位和严格整句正确率。
-- **学习文档：**[本专题详细说明](/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：意图识别槽位抽取 Precision Recall F1](https://search.bilibili.com/all?keyword=%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E6%A7%BD%E4%BD%8D%E6%8A%BD%E5%8F%96%20Precision%20Recall%20F1)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -48,7 +48,7 @@ CER = (S + D + I) / N_characters
 
 - **先修：**分类阈值、正负样本和暴露时长。
 - **重难点：**唤醒机会数与非目标暴露时间不是同一个分母；误唤醒率要按时长或明确的机会定义统计。
-- **学习文档：**[本专题详细说明](/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：语音唤醒率误唤醒率拒识评测](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E5%94%A4%E9%86%92%E7%8E%87%E8%AF%AF%E5%94%A4%E9%86%92%E7%8E%87%E6%8B%92%E8%AF%86%E8%AF%84%E6%B5%8B)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -60,7 +60,7 @@ CER = (S + D + I) / N_characters
 
 - **先修：**时间戳、分位数、时钟同步。
 - **重难点：**先定义起止事件；跨设备时钟误差和超时样本处理会直接影响 p95/p99。平均值不能代表长尾体验。
-- **学习文档：**[本专题详细说明](/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：端到端时延 P95 P99 测试](https://search.bilibili.com/all?keyword=%E7%AB%AF%E5%88%B0%E7%AB%AF%E6%97%B6%E5%BB%B6%20P95%20P99%20%E6%B5%8B%E8%AF%95)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -72,7 +72,7 @@ CER = (S + D + I) / N_characters
 
 - **先修：**可靠性统计、运行和失败分类。
 - **重难点：**基础设施失败与产品缺陷要分开，但都保留在报告；长稳指标需定义运行时长、请求量和恢复条件。
-- **学习文档：**[本专题详细说明](/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：语音系统稳定性长稳测试指标](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E7%B3%BB%E7%BB%9F%E7%A8%B3%E5%AE%9A%E6%80%A7%E9%95%BF%E7%A8%B3%E6%B5%8B%E8%AF%95%E6%8C%87%E6%A0%87)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -88,7 +88,7 @@ CER = (S + D + I) / N_characters
 
 - **先修：**实验设计、基线和样本量。
 - **重难点：**版本比较应尽量使用相同输入的配对评测；数据组成变化可能制造虚假的提升或退化。
-- **学习文档：**[本专题详细说明](/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/metrics)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：机器学习模型回归评测基线统计](https://search.bilibili.com/all?keyword=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B%E5%9B%9E%E5%BD%92%E8%AF%84%E6%B5%8B%E5%9F%BA%E7%BA%BF%E7%BB%9F%E8%AE%A1)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -100,5 +100,5 @@ CER = (S + D + I) / N_characters
 
 - **先修：**Python 文件处理、文本数据结构、第三方库版本管理。
 - **重难点：**指标实现库不会替团队决定中文归一化/分词口径；需要用小型已知例子验证 S/D/I 对齐，再扩大到全量数据。
-- **学习文档：**[jiwer 项目与说明](https://github.com/jitsi/jiwer)、[本专题指标章节](/metrics)。
+- **学习文档：**[jiwer 项目与说明](https://github.com/jitsi/jiwer)、[本专题指标章节](/vehicle-voice/testing/metrics)。
 - **B 站学习入口：**[搜索：jiwer WER CER Python 实现](https://search.bilibili.com/all?keyword=jiwer%20WER%20CER%20Python%20%E5%AE%9E%E7%8E%B0)。

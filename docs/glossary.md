@@ -12,7 +12,7 @@
 
 **重难点：**中文标点、数字、英文缩写如何归一化会改变分数；实时 partial 可能反复修订；最终文本正确也可能已经超时。必须同时保留原始输出、归一化版本和时延。
 
-**学习资料：**[ASR 评测章节](/asr-nlu-dialogue)、[WER/CER 指标](/metrics)；[B 站：ASR 与语音识别](https://search.bilibili.com/all?keyword=ASR%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB)。
+**学习资料：**[ASR 评测章节](/vehicle-voice/testing/asr-nlu-dialogue)、[WER/CER 指标](/vehicle-voice/testing/metrics)；[B 站：ASR 与语音识别](https://search.bilibili.com/all?keyword=ASR%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB)。
 
 ### NLU — Natural Language Understanding（自然语言理解）
 
@@ -22,7 +22,7 @@
 
 **重难点：**文本相似不代表意图相同；否定、比较、方向、数值和单位经常只差一个词。测试要有成对样本，只改变一个语义要素，并对槽位值做精确校验。
 
-**学习资料：**[ASR、NLU 与对话管理](/asr-nlu-dialogue)；[B 站：NLU 意图识别和槽位抽取](https://search.bilibili.com/all?keyword=NLU%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E6%A7%BD%E4%BD%8D%E6%8A%BD%E5%8F%96)。
+**学习资料：**[ASR、NLU 与对话管理](/vehicle-voice/testing/asr-nlu-dialogue)；[B 站：NLU 意图识别和槽位抽取](https://search.bilibili.com/all?keyword=NLU%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E6%A7%BD%E4%BD%8D%E6%8A%BD%E5%8F%96)。
 
 ### TTS — Text-to-Speech（文本转语音）
 
@@ -32,7 +32,7 @@
 
 **重难点：**在线服务可能升级模型，同一文本不一定得到完全相同的波形；合成语音的韵律、口音和发音分布不等于真人。要保存合成后的音频、参数和哈希，并保留有授权的真人代表性数据。
 
-**学习资料：**[语料资产与 TTS 注入](/corpus-tts)；[B 站：TTS 文本转语音与语音合成](https://search.bilibili.com/all?keyword=TTS%E6%96%87%E6%9C%AC%E8%BD%AC%E8%AF%AD%E9%9F%B3%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90)。
+**学习资料：**[语料资产与 TTS 注入](/vehicle-voice/testing/corpus-tts)；[B 站：TTS 文本转语音与语音合成](https://search.bilibili.com/all?keyword=TTS%E6%96%87%E6%9C%AC%E8%BD%AC%E8%AF%AD%E9%9F%B3%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90)。
 
 ### VAD — Voice Activity Detection（语音活动检测）
 
@@ -42,7 +42,7 @@
 
 **重难点：**VAD 与唤醒词检测不是一回事；噪声可能被误判成语音，句中停顿也可能造成提前结束。观察窗口和端点事件要依据产品协议定义。
 
-**学习资料：**[音频与声学测试](/audio-acoustics)；[B 站：VAD 语音端点检测](https://search.bilibili.com/all?keyword=VAD%E8%AF%AD%E9%9F%B3%E6%B4%BB%E5%8A%A8%E6%A3%80%E6%B5%8B%E7%AB%AF%E7%82%B9%E6%A3%80%E6%B5%8B)。
+**学习资料：**[音频与声学测试](/vehicle-voice/testing/audio-acoustics)；[B 站：VAD 语音端点检测](https://search.bilibili.com/all?keyword=VAD%E8%AF%AD%E9%9F%B3%E6%B4%BB%E5%8A%A8%E6%A3%80%E6%B5%8B%E7%AB%AF%E7%82%B9%E6%A3%80%E6%B5%8B)。
 
 ### AFE — Audio Front End（音频前端）
 
@@ -52,7 +52,7 @@
 
 **重难点：**不同供应商对 AFE 的范围定义可能不同；软件文件注入常常绕过麦克风和部分前端。测试报告要标清注入点，不能把局部测试称为完整声学链路验证。
 
-**学习资料：**[端到端架构](/architecture)、[音频链路与声学](/audio-acoustics)；[B 站：车载语音 AFE 音频前端](https://search.bilibili.com/all?keyword=%E8%BD%A6%E8%BD%BD%E8%AF%AD%E9%9F%B3AFE%E9%9F%B3%E9%A2%91%E5%89%8D%E7%AB%AF)。
+**学习资料：**[端到端架构](/vehicle-voice/testing/architecture)、[音频链路与声学](/vehicle-voice/testing/audio-acoustics)；[B 站：车载语音 AFE 音频前端](https://search.bilibili.com/all?keyword=%E8%BD%A6%E8%BD%BD%E8%AF%AD%E9%9F%B3AFE%E9%9F%B3%E9%A2%91%E5%89%8D%E7%AB%AF)。
 
 ### AEC — Acoustic Echo Cancellation（声学回声消除）
 
@@ -62,7 +62,7 @@
 
 **重难点：**AEC 依赖播放参考信号和声学路径估计；播放链路变化、双讲、非线性失真或路径突然变化都可能降低效果。不能只用安静环境单人朗读验证。
 
-**学习资料：**[音频与声学测试](/audio-acoustics)；[B 站：AEC 声学回声消除](https://search.bilibili.com/all?keyword=AEC%E5%A3%B0%E5%AD%A6%E5%9B%9E%E5%A3%B0%E6%B6%88%E9%99%A4)。
+**学习资料：**[音频与声学测试](/vehicle-voice/testing/audio-acoustics)；[B 站：AEC 声学回声消除](https://search.bilibili.com/all?keyword=AEC%E5%A3%B0%E5%AD%A6%E5%9B%9E%E5%A3%B0%E6%B6%88%E9%99%A4)。
 
 ### NS — Noise Suppression（噪声抑制）
 
@@ -72,7 +72,7 @@
 
 **重难点：**“噪声越小越好”并不总成立；过强处理会产生音乐噪声或语音伪影。既要看 ASR 结果，也要保存实际回采和处理链状态。
 
-**学习资料：**[音频与声学测试](/audio-acoustics)；[B 站：语音降噪与噪声抑制](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E9%99%8D%E5%99%AA%E5%99%AA%E5%A3%B0%E6%8A%91%E5%88%B6)。
+**学习资料：**[音频与声学测试](/vehicle-voice/testing/audio-acoustics)；[B 站：语音降噪与噪声抑制](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E9%99%8D%E5%99%AA%E5%99%AA%E5%A3%B0%E6%8A%91%E5%88%B6)。
 
 ### AGC — Automatic Gain Control（自动增益控制）
 
@@ -82,7 +82,7 @@
 
 **重难点：**AGC 会改变动态范围，且可能需要一段时间收敛；播放设备音量档位不是麦克风端声压级。记录声学电平和增益状态，避免只记“音量 50%”。
 
-**学习资料：**[数字音频与播放校准](/audio-acoustics)；[B 站：AGC 自动增益控制音频](https://search.bilibili.com/all?keyword=AGC%E8%87%AA%E5%8A%A8%E5%A2%9E%E7%9B%8A%E6%8E%A7%E5%88%B6%E9%9F%B3%E9%A2%91)。
+**学习资料：**[数字音频与播放校准](/vehicle-voice/testing/audio-acoustics)；[B 站：AGC 自动增益控制音频](https://search.bilibili.com/all?keyword=AGC%E8%87%AA%E5%8A%A8%E5%A2%9E%E7%9B%8A%E6%8E%A7%E5%88%B6%E9%9F%B3%E9%A2%91)。
 
 ### SNR — Signal-to-Noise Ratio（信噪比）
 
@@ -92,7 +92,7 @@
 
 **重难点：**SNR 不描述噪声的频谱、方向、时间变化或混响；相同 SNR 的风噪和音乐并非等价。还要区分数字混音所得 SNR 与座舱实际声学测量。
 
-**学习资料：**[噪声与 SNR](/audio-acoustics)；[B 站：SNR 信噪比和语音噪声](https://search.bilibili.com/all?keyword=SNR%E4%BF%A1%E5%99%AA%E6%AF%94%E8%AF%AD%E9%9F%B3%E5%99%AA%E5%A3%B0)。
+**学习资料：**[噪声与 SNR](/vehicle-voice/testing/audio-acoustics)；[B 站：SNR 信噪比和语音噪声](https://search.bilibili.com/all?keyword=SNR%E4%BF%A1%E5%99%AA%E6%AF%94%E8%AF%AD%E9%9F%B3%E5%99%AA%E5%A3%B0)。
 
 ### SPL 与 dBFS — 声压级和数字满量程分贝
 
@@ -102,7 +102,7 @@
 
 **重难点：**二者不是同一量，不能把某个 dBFS 数字直接当成车内声压。换算依赖播放设备、功放、距离和校准，需要参考麦克风与校准记录。
 
-**学习资料：**[音频链路与校准](/audio-acoustics)；[B 站：dB SPL 与 dBFS 区别](https://search.bilibili.com/all?keyword=dB%20SPL%20dBFS%E5%8C%BA%E5%88%AB%E9%9F%B3%E9%A2%91)。
+**学习资料：**[音频链路与校准](/vehicle-voice/testing/audio-acoustics)；[B 站：dB SPL 与 dBFS 区别](https://search.bilibili.com/all?keyword=dB%20SPL%20dBFS%E5%8C%BA%E5%88%AB%E9%9F%B3%E9%A2%91)。
 
 ### PCM、采样率、位深与声道
 
@@ -112,7 +112,7 @@
 
 **重难点：**修改 WAV 头中的采样率标记不等于重采样；重采样需滤波。把多通道混成单声道会丢失空间信息。WAV 是容器格式，不保证其内部编码和参数相同。
 
-**学习资料：**[数字音频基础](/audio-acoustics)；[FFmpeg 文档](https://ffmpeg.org/documentation.html)、[SoundFile 文档](https://python-soundfile.readthedocs.io/en/latest/)；[B 站：PCM 采样率 位深 声道](https://search.bilibili.com/all?keyword=PCM%E9%87%87%E6%A0%B7%E7%8E%87%E4%BD%8D%E6%B7%B1%E5%A3%B0%E9%81%93%E8%AE%B2%E8%A7%A3)。
+**学习资料：**[数字音频基础](/vehicle-voice/testing/audio-acoustics)；[FFmpeg 文档](https://ffmpeg.org/documentation.html)、[SoundFile 文档](https://python-soundfile.readthedocs.io/en/latest/)；[B 站：PCM 采样率 位深 声道](https://search.bilibili.com/all?keyword=PCM%E9%87%87%E6%A0%B7%E7%8E%87%E4%BD%8D%E6%B7%B1%E5%A3%B0%E9%81%93%E8%AE%B2%E8%A7%A3)。
 
 ## 指标与识别评测
 
@@ -124,7 +124,7 @@
 
 **重难点：**中文没有天然空格分词；分词器、数字归一化、标点和英文大小写都会改变结果。插入错误可能使 WER 超过 100%。跨版本比较必须固定评测口径。
 
-**学习资料：**[质量指标与统计](/metrics)、[jiwer 文档](https://github.com/jitsi/jiwer)；[B 站：WER 词错误率 ASR 评测](https://search.bilibili.com/all?keyword=WER%E8%AF%8D%E9%94%99%E8%AF%AF%E7%8E%87ASR%E8%AF%84%E6%B5%8B)。
+**学习资料：**[质量指标与统计](/vehicle-voice/testing/metrics)、[jiwer 文档](https://github.com/jitsi/jiwer)；[B 站：WER 词错误率 ASR 评测](https://search.bilibili.com/all?keyword=WER%E8%AF%8D%E9%94%99%E8%AF%AF%E7%8E%87ASR%E8%AF%84%E6%B5%8B)。
 
 ### CER — Character Error Rate（字错误率/字符错误率）
 
@@ -134,7 +134,7 @@
 
 **重难点：**按 Unicode 字符、汉字或规范化字符序列的定义会影响结果； CER 不能表达槽位或业务错误严重程度。温度“二十二度”转成“22 度”可能是字符不一致，但语义相同，因此需另报语义/业务指标。
 
-**学习资料：**[质量指标与统计](/metrics)；[B 站：CER 字符错误率 中文 ASR](https://search.bilibili.com/all?keyword=CER%E5%AD%97%E7%AC%A6%E9%94%99%E8%AF%AF%E7%8E%87%E4%B8%AD%E6%96%87ASR)。
+**学习资料：**[质量指标与统计](/vehicle-voice/testing/metrics)；[B 站：CER 字符错误率 中文 ASR](https://search.bilibili.com/all?keyword=CER%E5%AD%97%E7%AC%A6%E9%94%99%E8%AF%AF%E7%8E%87%E4%B8%AD%E6%96%87ASR)。
 
 ### 意图、槽位与 F1
 
@@ -144,7 +144,7 @@
 
 **重难点：**总体准确率会被高频类别主导；宏平均和微平均有不同含义。关键槽位、非法值拦截和严格整句匹配要分开报告。
 
-**学习资料：**[ASR/NLU 评测](/asr-nlu-dialogue)、[分类与槽位指标](/metrics)；[B 站：意图识别 槽位抽取 F1](https://search.bilibili.com/all?keyword=%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E6%A7%BD%E4%BD%8D%E6%8A%BD%E5%8F%96F1%E6%8C%87%E6%A0%87)。
+**学习资料：**[ASR/NLU 评测](/vehicle-voice/testing/asr-nlu-dialogue)、[分类与槽位指标](/vehicle-voice/testing/metrics)；[B 站：意图识别 槽位抽取 F1](https://search.bilibili.com/all?keyword=%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E6%A7%BD%E4%BD%8D%E6%8A%BD%E5%8F%96F1%E6%8C%87%E6%A0%87)。
 
 ### 唤醒率与误唤醒率
 
@@ -154,7 +154,7 @@
 
 **重难点：**必须定义一次“机会”、成功时间窗、非目标暴露时长和负样本组成。只统计正例成功次数无法算误唤醒率；只按负样本条数也无法代表真实使用暴露时间。
 
-**学习资料：**[语音链路架构](/architecture)、[唤醒与拒识](/metrics)；[B 站：语音唤醒率误唤醒率测试](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E5%94%A4%E9%86%92%E7%8E%87%E8%AF%AF%E5%94%A4%E9%86%92%E7%8E%87%E6%B5%8B%E8%AF%95)。
+**学习资料：**[语音链路架构](/vehicle-voice/testing/architecture)、[唤醒与拒识](/vehicle-voice/testing/metrics)；[B 站：语音唤醒率误唤醒率测试](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E5%94%A4%E9%86%92%E7%8E%87%E8%AF%AF%E5%94%A4%E9%86%92%E7%8E%87%E6%B5%8B%E8%AF%95)。
 
 ### P95 / P99 与端到端时延
 
@@ -164,7 +164,7 @@
 
 **重难点：**时钟域、起止事件、超时样本和样本量必须明确。跨设备时钟不同步时，毫秒级结论可能不可信；平均值不能代替尾部指标。
 
-**学习资料：**[时延指标](/metrics)；[B 站：P95 P99 延迟性能测试](https://search.bilibili.com/all?keyword=P95%20P99%E5%BB%B6%E8%BF%9F%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95)。
+**学习资料：**[时延指标](/vehicle-voice/testing/metrics)；[B 站：P95 P99 延迟性能测试](https://search.bilibili.com/all?keyword=P95%20P99%E5%BB%B6%E8%BF%9F%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95)。
 
 ## 对话与语义
 
@@ -176,7 +176,7 @@
 
 **重难点：**仅以单轮句子为单位无法覆盖状态残留和竞态。测试需保存每轮事件顺序和 session/zone id，并检查取消后是否仍产生副作用。
 
-**学习资料：**[多轮对话评测](/asr-nlu-dialogue)；[B 站：对话管理 Dialogue State 语音助手](https://search.bilibili.com/all?keyword=%E5%AF%B9%E8%AF%9D%E7%AE%A1%E7%90%86Dialogue%20State%E8%AF%AD%E9%9F%B3%E5%8A%A9%E6%89%8B)。
+**学习资料：**[多轮对话评测](/vehicle-voice/testing/asr-nlu-dialogue)；[B 站：对话管理 Dialogue State 语音助手](https://search.bilibili.com/all?keyword=%E5%AF%B9%E8%AF%9D%E7%AE%A1%E7%90%86Dialogue%20State%E8%AF%AD%E9%9F%B3%E5%8A%A9%E6%89%8B)。
 
 ### Intent / Slot（意图 / 槽位）
 
@@ -184,7 +184,7 @@
 
 **重难点：**实体值可能要做单位、枚举和上下文归一化；少一个否定词或音区词会改变业务后果。为关键值设计成对边界样本和非法值样本。
 
-**学习资料：**[NLU 评测](/asr-nlu-dialogue)；[B 站：意图槽位语义解析](https://search.bilibili.com/all?keyword=%E8%AF%AD%E4%B9%89%E8%A7%A3%E6%9E%90%E6%84%8F%E5%9B%BE%E6%A7%BD%E4%BD%8D)。
+**学习资料：**[NLU 评测](/vehicle-voice/testing/asr-nlu-dialogue)；[B 站：意图槽位语义解析](https://search.bilibili.com/all?keyword=%E8%AF%AD%E4%B9%89%E8%A7%A3%E6%9E%90%E6%84%8F%E5%9B%BE%E6%A7%BD%E4%BD%8D)。
 
 ### Partial / Final（中间识别 / 最终识别）
 
@@ -194,7 +194,7 @@
 
 **重难点：**不能把任一 partial 当 final；必须定义 final 事件、修订窗口、端点和业务触发时机。保存原始时间序列才能排查时序错误。
 
-**学习资料：**[流式识别判定](/asr-nlu-dialogue)；[B 站：流式 ASR partial final](https://search.bilibili.com/all?keyword=%E6%B5%81%E5%BC%8FASR%20partial%20final%E8%AF%86%E5%88%AB)。
+**学习资料：**[流式识别判定](/vehicle-voice/testing/asr-nlu-dialogue)；[B 站：流式 ASR partial final](https://search.bilibili.com/all?keyword=%E6%B5%81%E5%BC%8FASR%20partial%20final%E8%AF%86%E5%88%AB)。
 
 ## 汽车电子与观测
 
@@ -204,7 +204,7 @@
 
 **重难点：**语音服务收到请求不代表 ECU 接受或执行；需理解信号所属控制器、反馈周期和有效条件。具体架构随车型不同。
 
-**学习资料：**[车机、总线与 HIL](/vehicle-integration)；[B 站：汽车 ECU 电子控制单元基础](https://search.bilibili.com/all?keyword=%E6%B1%BD%E8%BD%A6ECU%E7%94%B5%E5%AD%90%E6%8E%A7%E5%88%B6%E5%8D%95%E5%85%83%E5%9F%BA%E7%A1%80)。
+**学习资料：**[车机、总线与 HIL](/vehicle-voice/testing/vehicle-integration)；[B 站：汽车 ECU 电子控制单元基础](https://search.bilibili.com/all?keyword=%E6%B1%BD%E8%BD%A6ECU%E7%94%B5%E5%AD%90%E6%8E%A7%E5%88%B6%E5%8D%95%E5%85%83%E5%9F%BA%E7%A1%80)。
 
 ### CAN — Controller Area Network（控制器局域网）
 
@@ -214,7 +214,7 @@
 
 **重难点：**监听到请求帧不等于状态落地；需检查响应信号、有效位、周期、超时、通道和数据库版本。总线写入需在获准隔离台架内。
 
-**学习资料：**[CAN 信号测试](/vehicle-integration)、[python-can](https://python-can.readthedocs.io/)、[cantools](https://cantools.readthedocs.io/)；[B 站：CAN 总线基础与汽车测试](https://search.bilibili.com/all?keyword=CAN%E6%80%BB%E7%BA%BF%E5%9F%BA%E7%A1%80%E6%B1%BD%E8%BD%A6%E6%B5%8B%E8%AF%95)。
+**学习资料：**[CAN 信号测试](/vehicle-voice/testing/vehicle-integration)、[python-can](https://python-can.readthedocs.io/)、[cantools](https://cantools.readthedocs.io/)；[B 站：CAN 总线基础与汽车测试](https://search.bilibili.com/all?keyword=CAN%E6%80%BB%E7%BA%BF%E5%9F%BA%E7%A1%80%E6%B1%BD%E8%BD%A6%E6%B5%8B%E8%AF%95)。
 
 ### DBC — CAN Database（CAN 数据库描述文件）
 
@@ -224,7 +224,7 @@
 
 **重难点：**DBC 版本必须与车型/ECU 软件匹配；错误字节序、缩放或偏移会制造“看似合理”的错误值。记录所用数据库版本和信号定义。
 
-**学习资料：**[CAN/DBC 集成](/vehicle-integration)、[cantools 文档](https://cantools.readthedocs.io/)；[B 站：DBC 信号解析 CAN](https://search.bilibili.com/all?keyword=DBC%E4%BF%A1%E5%8F%B7%E8%A7%A3%E6%9E%90CAN)。
+**学习资料：**[CAN/DBC 集成](/vehicle-voice/testing/vehicle-integration)、[cantools 文档](https://cantools.readthedocs.io/)；[B 站：DBC 信号解析 CAN](https://search.bilibili.com/all?keyword=DBC%E4%BF%A1%E5%8F%B7%E8%A7%A3%E6%9E%90CAN)。
 
 ### ADB — Android Debug Bridge（Android 调试桥）
 
@@ -234,7 +234,7 @@
 
 **重难点：**多设备时必须明确序列号；设备未授权、断连或命令卡住要判为环境问题并保留错误输出。刷机/清数据属于改变环境的维护操作，需要检查和恢复流程。
 
-**学习资料：**[Android 官方 ADB 文档](https://developer.android.com/tools/adb)、[车机集成](/vehicle-integration)；[B 站：ADB 常用命令 Android 自动化](https://search.bilibili.com/all?keyword=ADB%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4Android%E8%87%AA%E5%8A%A8%E5%8C%96)。
+**学习资料：**[Android 官方 ADB 文档](https://developer.android.com/tools/adb)、[车机集成](/vehicle-voice/testing/vehicle-integration)；[B 站：ADB 常用命令 Android 自动化](https://search.bilibili.com/all?keyword=ADB%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4Android%E8%87%AA%E5%8A%A8%E5%8C%96)。
 
 ### HIL — Hardware-in-the-Loop（硬件在环）
 
@@ -244,7 +244,7 @@
 
 **重难点：**HIL 不是“接上真机就算完成”；模型准确性、接口映射、时钟同步、资源锁、台架健康和状态恢复都会影响有效性。报告中要注明仿真与真实车辆的差异。
 
-**学习资料：**[HIL 资源与状态恢复](/vehicle-integration)、[测试分层与 CI](/ci-quality)；[B 站：HIL 硬件在环汽车测试](https://search.bilibili.com/all?keyword=HIL%E7%A1%AC%E4%BB%B6%E5%9C%A8%E7%8E%AF%E6%B1%BD%E8%BD%A6%E6%B5%8B%E8%AF%95)。
+**学习资料：**[HIL 资源与状态恢复](/vehicle-voice/testing/vehicle-integration)、[测试分层与 CI](/ci-quality)；[B 站：HIL 硬件在环汽车测试](https://search.bilibili.com/all?keyword=HIL%E7%A1%AC%E4%BB%B6%E5%9C%A8%E7%8E%AF%E6%B1%BD%E8%BD%A6%E6%B5%8B%E8%AF%95)。
 
 ### HMI — Human-Machine Interface（人机界面）与 OCR
 
@@ -254,7 +254,7 @@
 
 **重难点：**OCR 文本正确也不能证明业务数据源正确；动画、缩放、动态区域会造成截图差异。优先使用 accessibility tree/控件状态，OCR 需做多帧稳定判定和低置信度处理。
 
-**学习资料：**[多模态断言](/multimodal-assertions)、[OpenCV 文档](https://docs.opencv.org/4.x/)；[B 站：OpenCV OCR UI 自动化测试](https://search.bilibili.com/all?keyword=OpenCV%20OCR%20UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95)。
+**学习资料：**[多模态断言](/vehicle-voice/testing/multimodal-assertions)、[OpenCV 文档](https://docs.opencv.org/4.x/)；[B 站：OpenCV OCR UI 自动化测试](https://search.bilibili.com/all?keyword=OpenCV%20OCR%20UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95)。
 
 ### SOME/IP 与 DoIP
 
@@ -264,7 +264,7 @@
 
 **重难点：**“网络能连通”不代表服务发现、实例、版本、订阅和业务状态正确；要按项目接口定义检查生命周期和超时。不要假设所有车载 Ethernet 都使用同一协议栈。
 
-**学习资料：**[Ethernet 与服务接口](/vehicle-integration)、[ASAM 标准入口](https://www.asam.net/standards/)；[B 站：SOME/IP DoIP 汽车以太网](https://search.bilibili.com/all?keyword=SOME%2FIP%20DoIP%E6%B1%BD%E8%BD%A6%E4%BB%A5%E5%A4%AA%E7%BD%91)。
+**学习资料：**[Ethernet 与服务接口](/vehicle-voice/testing/vehicle-integration)、[ASAM 标准入口](https://www.asam.net/standards/)；[B 站：SOME/IP DoIP 汽车以太网](https://search.bilibili.com/all?keyword=SOME%2FIP%20DoIP%E6%B1%BD%E8%BD%A6%E4%BB%A5%E5%A4%AA%E7%BD%91)。
 
 ## 自动化与 AI 测试
 
@@ -326,7 +326,7 @@
 
 **重难点：**不能仅凭标准编号推断其覆盖所有车内声场或可直接作为车厂验收门槛；正式项目要求和标准版本需要单独核实。
 
-**学习资料：**[ETSI 官方标准检索](https://www.etsi.org/standards-search#page=1&search=ES%20202%20396-1)、[声学与噪声测试](/audio-acoustics)；[B 站：ETSI ES 202 396 车载噪声仿真](https://search.bilibili.com/all?keyword=ETSI%20ES%20202%20396%20%E5%99%AA%E5%A3%B0%E4%BB%BF%E7%9C%9F)。
+**学习资料：**[ETSI 官方标准检索](https://www.etsi.org/standards-search#page=1&search=ES%20202%20396-1)、[声学与噪声测试](/vehicle-voice/testing/audio-acoustics)；[B 站：ETSI ES 202 396 车载噪声仿真](https://search.bilibili.com/all?keyword=ETSI%20ES%20202%20396%20%E5%99%AA%E5%A3%B0%E4%BB%BF%E7%9C%9F)。
 
 ## 怎么使用这本词典
 

@@ -14,7 +14,7 @@
 
 - **先修：**语音链路、语言现象和服务事件。
 - **重难点：**识别准确率、拒识、流式稳定性和时延是不同维度；场景分层比单一总体 WER 更能定位问题。
-- **学习文档：**[本专题详细说明](/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：ASR语音识别测试用例设计](https://search.bilibili.com/all?keyword=ASR%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -26,7 +26,7 @@
 
 - **先修：**Unicode、数字表达和中文分词。
 - **重难点：**过度归一化会抹掉否定、方向和参数错误；保存原文与规范化副本并版本化规则。
-- **学习文档：**[本专题详细说明](/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：中文ASR文本归一化WER CER](https://search.bilibili.com/all?keyword=%E4%B8%AD%E6%96%87ASR%E6%96%87%E6%9C%AC%E5%BD%92%E4%B8%80%E5%8C%96WER%20CER)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -38,7 +38,7 @@
 
 - **先修：**意图分类、槽位和值归一化。
 - **重难点：**不仅比较 intent；对温度、音区、单位、实体和非法值逐个断言，成对样本便于定位语义敏感点。
-- **学习文档：**[本专题详细说明](/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：NLU意图识别槽位抽取评测](https://search.bilibili.com/all?keyword=NLU%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E6%A7%BD%E4%BD%8D%E6%8A%BD%E5%8F%96%E8%AF%84%E6%B5%8B)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -63,7 +63,7 @@ Idle
 
 - **先修：**有限状态机、事件序列和状态迁移。
 - **重难点：**测试侧状态模型是预期轨迹，不应替代真实 SUT 状态；覆盖取消、澄清、超时、打断和重置迁移。
-- **学习文档：**[本专题详细说明](/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：语音助手对话状态机Dialogue Manager](https://search.bilibili.com/all?keyword=%E8%AF%AD%E9%9F%B3%E5%8A%A9%E6%89%8B%E5%AF%B9%E8%AF%9D%E7%8A%B6%E6%80%81%E6%9C%BADialogue%20Manager)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -83,7 +83,7 @@ Idle
 
 - **先修：**上下文变量、会话隔离和幂等性。
 - **重难点：**多轮用例必须逐轮断言和清理上下文；改口或取消之后要观察是否发生延迟副作用。
-- **学习文档：**[本专题详细说明](/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：多轮对话测试用例上下文状态](https://search.bilibili.com/all?keyword=%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E7%8A%B6%E6%80%81)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。
 
 
@@ -95,5 +95,5 @@ Partial transcript 允许变化时，断言不要要求每个中间文本都完�
 
 - **先修：**异步事件、partial/final 和端点检测。
 - **重难点：**中间文本可能修订；需判定最终稳定条件以及任何 partial 是否过早触发了不可逆业务动作。
-- **学习文档：**[本专题详细说明](/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
+- **学习文档：**[本专题详细说明](/vehicle-voice/testing/asr-nlu-dialogue)；术语查[专有名词词典](/glossary)；参考入口：[工具与官方资料](/tools-and-resources)。
 - **B 站学习入口：**[搜索：流式ASR partial final端点检测评测](https://search.bilibili.com/all?keyword=%E6%B5%81%E5%BC%8FASR%20partial%20final%E7%AB%AF%E7%82%B9%E6%A3%80%E6%B5%8B%E8%AF%84%E6%B5%8B)。这是站内主题搜索；选课时优先查看课程系列、发布时间和讲解是否包含实操。

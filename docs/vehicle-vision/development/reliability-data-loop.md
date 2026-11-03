@@ -20,4 +20,4 @@
 
 模拟相机断流、模型超时和内存压力，验证错误码、状态转换、恢复时间及日志关联。再定义一个问题样本从发现到审核、入库、回归和发布的流程。交付物需包含授权/隐私检查点与版本追踪示例。
 
-**配套专题：**[ECU 性能、回归与 CI](/vehicle-vision/ecu-performance-ci) · [视觉测试学习路线](/vehicle-vision/roadmap) · [数据集与标注质量](/vehicle-vision/dataset-and-annotation)
+**延伸阅读：**[视觉数据、训练与评估](./vision-data-and-training) · [端到端性能剖析](./performance-profiling) · [模型导出与推理部署](./model-export-inference)
