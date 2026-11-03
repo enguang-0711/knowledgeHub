@@ -90,7 +90,7 @@
 
 - **先修：**文件/目录、二进制数据和基本分贝概念。
 - **重难点：**采样率/位深/声道必须与实际内容一致；数字混音噪声与声学播放噪声覆盖不同；TTS 母版和派生音频要有参数及哈希血缘。
-- **学习文档：**[音频与声学](/vehicle-voice/testing/audio-acoustics)、[语料与 TTS](/vehicle-voice/testing/corpus-tts)、[术语词典](/glossary)。
+- **学习文档：**[数字音频格式测试](/vehicle-voice/testing/audio-format-test)、[音频注入](/vehicle-voice/testing/audio-injection)、[声学实验](/vehicle-voice/testing/acoustic-test-design)、[噪声与 SNR](/vehicle-voice/testing/noise-snr-testing)、[测试数据集](/vehicle-voice/testing/voice-dataset-test)、[TTS 注入](/vehicle-voice/testing/tts-injection-test)、[术语词典](/glossary)。
 - **B 站学习入口：**[数字音频基础 采样率 位深 TTS 声学测试](https://search.bilibili.com/all?keyword=%E6%95%B0%E5%AD%97%E9%9F%B3%E9%A2%91%E5%9F%BA%E7%A1%80%E9%87%87%E6%A0%B7%E7%8E%87%E4%BD%8D%E6%B7%B1TTS%E5%A3%B0%E5%AD%A6%E6%B5%8B%E8%AF%95)。
 
 ## 阶段 3：ASR、NLU 和对话评估（第 8–10 周）
@@ -112,7 +112,7 @@
 
 - **先修：**阶段 2 的音频和语料资产，以及分类指标基础。
 - **重难点：**评测器不能把规范化差异误当语义正确；拆分 ASR、NLU、对话状态和业务错误；小样本分数要报告样本量和不确定性。
-- **学习文档：**[ASR/NLU/对话评测](/vehicle-voice/testing/asr-nlu-dialogue)、[质量指标](/vehicle-voice/testing/metrics)、[术语词典](/glossary)。
+- **学习文档：**[ASR 评测](/vehicle-voice/testing/asr-evaluation)、[NLU 评测](/vehicle-voice/testing/nlu-evaluation)、[多轮对话测试](/vehicle-voice/testing/dialogue-evaluation)、[WER/CER](/vehicle-voice/testing/wer-cer-metrics)、[唤醒指标](/vehicle-voice/testing/wake-word-metrics)、[时延指标](/vehicle-voice/testing/latency-metrics)、[术语词典](/glossary)。
 - **B 站学习入口：**[WER CER ASR 评测 意图识别槽位抽取](https://search.bilibili.com/all?keyword=WER%20CER%20ASR%E8%AF%84%E6%B5%8B%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E6%A7%BD%E4%BD%8D%E6%8A%BD%E5%8F%96)。
 
 ## 阶段 4：车机接入与多模态断言（第 11–14 周）
@@ -135,7 +135,7 @@
 
 - **先修：**阶段 1 的设备适配器和阶段 3 的事件/状态评估。
 - **重难点：**明确软件注入绕过的硬件路径；状态信号要校验解码版本、有效位和稳定窗口；多个屏/总线/日志时间需要关联。
-- **学习文档：**[车机与总线](/vehicle-voice/testing/vehicle-integration)、[多模态断言](/vehicle-voice/testing/multimodal-assertions)。
+- **学习文档：**[CAN 信号测试](/vehicle-voice/testing/can-signal-testing)、[车辆状态断言](/vehicle-voice/testing/vehicle-state-assertions)、[日志断言](/vehicle-voice/testing/log-assertions)、[UI 断言](/vehicle-voice/testing/ui-assertions)。
 - **B 站学习入口：**[ADB CAN DBC HIL 车载自动化测试](https://search.bilibili.com/all?keyword=ADB%20CAN%20DBC%20HIL%20%E8%BD%A6%E8%BD%BD%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95)。
 
 ## 阶段 5：HIL、CI 和持续质量（第 15–17 周）
@@ -157,7 +157,7 @@
 
 - **先修：**Git 分支/PR、测试分层、版本化输入和资源管理。
 - **重难点：**真实 HIL 设备需要独占调度、最小权限、失败收尾和工件保留；基线和质量门槛需要先测出环境噪声。
-- **学习文档：**[CI 与质量趋势](/ci-quality)、[GitHub Actions 官方文档](https://docs.github.com/actions)。
+- **学习文档：**[HIL 测试](/vehicle-voice/testing/hil-testing)、[语音鲁棒性与稳定性指标](/vehicle-voice/testing/robustness-metrics)、[CI 与质量趋势](/ci-quality)、[GitHub Actions 官方文档](https://docs.github.com/actions)。
 - **B 站学习入口：**[GitHub Actions CI HIL 自动化回归](https://search.bilibili.com/all?keyword=GitHub%20Actions%20CI%20HIL%E8%87%AA%E5%8A%A8%E5%8C%96%E5%9B%9E%E5%BD%92)。
 
 ## 阶段 6：大模型辅助测试（第 18–20 周）

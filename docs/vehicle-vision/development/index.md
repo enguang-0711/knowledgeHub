@@ -1,50 +1,65 @@
 # 车载视觉开发知识点目录
 
-本目录把[车载视觉开发学习路线](/vehicle-vision/development/roadmap)拆成可单独阅读和练习的专题文档。建议先从系统和工程基础开始，再学习成像几何、算法、领域方向和端侧交付。每篇文档包含关键概念、工程检查点、常见问题和练习；完成标准以能解释、实现和定位问题为主。
+本目录把视觉研发路线细化为单项知识点文档，涵盖工程基础、成像几何、算法、数据和部署。开发与测试内容各自独立；测试文档见[车载视觉测试目录](/vehicle-vision/testing/)。专题导览页只组织阅读路径，每个知识点都链接到单独文件。
 
-## 系统与工程基础
+## 需求和工程基础
 
-- [功能需求与视觉系统架构](./system-architecture-and-requirements)
-- [C++、CMake 与资源管理](./cpp-cmake-resource-management)
+- [车载视觉需求工程](./requirements-engineering)
+- [车载视觉系统架构](./system-architecture)
+- [C++ 资源生命周期](./cpp-resource-lifecycle)
+- [视觉项目 CMake 构建系统](./cmake-build-system)
 - [Python、NumPy 与视觉数据处理](./python-numpy)
-- [Linux、Git 与调试工具](./linux-git-debugging)
+- [Linux 视觉开发环境](./linux-vision-development)
+- [视觉代码与数据版本管理](./git-dataset-versioning)
+- [车载视觉问题调试](./vision-debugging)
 - [计算机视觉数学基础](./math-for-vision)
 
-## 图像、成像与几何
+## 图像、相机与几何
 
-- [图像格式与预处理](./image-formats-preprocessing)
+- [视觉图像格式与内存布局](./image-formats)
+- [视觉图像预处理](./image-preprocessing)
 - [相机成像与镜头模型](./camera-imaging-and-lens-models)
-- [坐标变换、标定与时间同步](./camera-geometry-calibration-sync)
+- [相机标定](./camera-calibration)
+- [视觉坐标系与几何变换](./coordinate-frames)
+- [多相机时间同步](./camera-time-sync)
 - [经典计算机视觉方法](./classical-vision)
 - [视频时序与流式处理](./video-temporal-processing)
 
-## 深度学习与视觉任务
+## 深度学习和视觉任务
 
 - [深度学习基础与训练机制](./deep-learning-foundations)
-- [视觉数据、训练与评估](./vision-data-and-training)
+- [视觉数据集工程](./dataset-engineering)
+- [视觉标注质量](./annotation-quality)
+- [视觉模型训练与评估](./model-training-evaluation)
 - [图像分类](./classification)
 - [目标检测](./object-detection)
-- [语义与实例分割](./segmentation)
+- [语义分割](./semantic-segmentation)
+- [实例分割](./instance-segmentation)
 - [多目标跟踪](./tracking)
 - [关键点与姿态估计](./keypoints-pose)
 - [深度估计与几何感知](./depth-estimation-geometry)
 
-## 车载视觉方向
+## 车载视觉应用方向
 
 - [前视 ADAS 感知开发](./adas-perception-development)
-- [环视与泊车视觉开发](./surround-view-development)
-- [舱内 DMS/OMS 视觉开发](./cabin-vision-development)
+- [环视成像与鸟瞰图开发](./surround-view-imaging-development)
+- [泊车感知开发](./parking-perception-development)
+- [驾驶员监测 DMS 开发](./dms-development)
+- [乘员监测 OMS 开发](./oms-development)
 
-## 部署与系统交付
+## 部署、性能和运行质量
 
-- [模型导出与推理部署](./model-export-inference)
-- [端侧优化与量化](./edge-optimization)
+- [视觉模型导出](./model-export)
+- [视觉推理运行时](./inference-runtime)
+- [视觉模型量化](./quantization)
+- [车载视觉端侧推理优化](./edge-optimization)
+- [车载视觉系统可靠性](./reliability-engineering)
 - [端到端性能剖析](./performance-profiling)
 - [视觉系统集成](./system-integration)
-- [可靠性、可观测性与数据闭环](./reliability-data-loop)
+- [视觉可观测性与数据闭环](./observability-data-loop)
 
-## 开发路线
+## 学习路线
 
-- [开发学习路线](/vehicle-vision/development/roadmap)
+- [车载视觉开发学习路线](/vehicle-vision/development/roadmap)
 
-本目录只组织视觉算法、数据管线、模型和车端功能的开发知识。测试内容由独立的测试路线和专题目录维护；开发与测试的总入口见[车载视觉专题](/vehicle-vision/)。具体项目的接口、硬件和数据授权约束以项目正式定义为准。
+不同应用方向会复用基础算法，但各自的传感器、坐标和验收条件不同；具体项目以正式需求、接口和数据授权为准。

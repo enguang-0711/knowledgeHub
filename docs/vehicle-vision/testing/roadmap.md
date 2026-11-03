@@ -25,7 +25,7 @@
 
 **练习与验收：**选一种功能，画系统边界图，列出至少三个会造成相似表象但根因不同的故障，如镜头遮挡、标定漂移、模型漏检、下游过滤。
 
-**专题文档：**[视觉测试导览](/vehicle-vision/testing/) · [前视 ADAS](/vehicle-vision/testing/adas-front-camera) · [环视/泊车](/vehicle-vision/testing/surround-view-parking) · [DMS/OMS](/vehicle-vision/testing/cabin-vision-dms-oms)
+**专题文档：**[视觉测试导览](/vehicle-vision/testing/) · [前视 ADAS](/vehicle-vision/testing/adas-front-camera) · [环视影像](/vehicle-vision/testing/surround-camera-test) · [泊车感知](/vehicle-vision/testing/parking-perception-test) · [DMS](/vehicle-vision/testing/dms-testing) · [OMS](/vehicle-vision/testing/oms-testing)
 
 **学习资料：**[视觉测试导览](/vehicle-vision/testing/)；[B 站：ADAS 摄像头感知与功能链路](https://search.bilibili.com/all?keyword=ADAS%20%E6%91%84%E5%83%8F%E5%A4%B4%20%E6%84%9F%E7%9F%A5%20%E5%8A%9F%E8%83%BD%E9%93%BE%E8%B7%AF)。
 
@@ -36,6 +36,8 @@
 **重难点：**不同相机 ID、镜头、安装位置和标定版本会改变几何意义；滚动快门、自动曝光和 HDR 可能改变动态目标外观。离线 jpg 指标不会暴露所有成像链路问题。
 
 **练习与验收：**用 OpenCV 检查图片/视频元信息；在公开标定样例上运行标定，保存输入、参数、重投影误差和配置说明。
+
+**专题文档：**[相机成像](/vehicle-vision/testing/camera-imaging-test) · [相机标定](/vehicle-vision/testing/calibration-test) · [坐标几何](/vehicle-vision/testing/geometry-test) · [多相机同步](/vehicle-vision/testing/camera-sync-test)
 
 **学习资料：**[OpenCV 相机标定](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html)；[B 站：OpenCV 相机标定和内外参](https://search.bilibili.com/all?keyword=OpenCV%20%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%20%E5%86%85%E5%8F%82%20%E5%A4%96%E5%8F%82)。
 
@@ -51,7 +53,7 @@
 
 **学习资料：**[CVAT 文档](https://docs.cvat.ai/docs/)；[ASAM OpenSCENARIO](https://www.asam.net/standards/detail/openscenario/)；[B 站：自动驾驶数据集标注和场景库](https://search.bilibili.com/all?keyword=%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%20%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%87%E6%B3%A8%20%E5%9C%BA%E6%99%AF%E5%BA%93)。
 
-**专题文档：**[数据集与标注质量](/vehicle-vision/testing/dataset-and-annotation) · [场景覆盖与 ODD](/vehicle-vision/testing/scenario-coverage)
+**专题文档：**[数据集版本](/vehicle-vision/testing/dataset-versioning-test) · [标注质量](/vehicle-vision/testing/annotation-quality-test) · [ODD 定义](/vehicle-vision/testing/odd-definition) · [场景矩阵](/vehicle-vision/testing/scenario-matrix)
 
 ## 阶段 3：指标与离线评估
 
@@ -63,7 +65,7 @@
 
 **学习资料：**[COCO Detection Evaluation](https://cocodataset.org/#detection-eval)；[B 站：IoU AP mAP 目标检测评价指标实战](https://search.bilibili.com/all?keyword=IoU%20AP%20mAP%20%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%E5%AE%9E%E6%88%98)。
 
-**专题文档：**[视觉任务与指标](/vehicle-vision/testing/perception-tasks-metrics)
+**专题文档：**[分类指标](/vehicle-vision/testing/classification-metrics) · [检测指标](/vehicle-vision/testing/detection-metrics) · [跟踪指标](/vehicle-vision/testing/tracking-metrics) · [分割指标](/vehicle-vision/testing/segmentation-metrics)
 
 ## 阶段 4：选择一个视觉功能族深入
 
@@ -71,7 +73,7 @@
 
 **练习与验收：**建立至少 10 个该系统族的场景用例，每条写明需求/风险来源、输入、预期输出、判定窗口、失败证据和被旁路组件；抽取 3 个用例形成可执行的离线、仿真或台架测试。报告须标注目前没有覆盖的硬件/整车环节。
 
-**专题文档：**[前视 ADAS](/vehicle-vision/testing/adas-front-camera) · [环视与泊车](/vehicle-vision/testing/surround-view-parking) · [舱内 DMS/OMS](/vehicle-vision/testing/cabin-vision-dms-oms)
+**专题文档：**[前视 ADAS](/vehicle-vision/testing/adas-front-camera) · [环视影像](/vehicle-vision/testing/surround-camera-test) · [泊车感知](/vehicle-vision/testing/parking-perception-test) · [DMS](/vehicle-vision/testing/dms-testing) · [OMS](/vehicle-vision/testing/oms-testing)
 
 ## 阶段 5：视频时序、仿真与回放
 
@@ -83,7 +85,7 @@
 
 **学习资料：**[ASAM OpenSCENARIO](https://www.asam.net/standards/detail/openscenario/)；[B 站：自动驾驶仿真测试 SIL HIL 场景回放](https://search.bilibili.com/all?keyword=%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E4%BB%BF%E7%9C%9F%E6%B5%8B%E8%AF%95%20SIL%20HIL%20%E5%9C%BA%E6%99%AF%E5%9B%9E%E6%94%BE)。
 
-**专题文档：**[场景覆盖与 ODD](/vehicle-vision/testing/scenario-coverage) · [仿真、回放与 SIL/HIL](/vehicle-vision/testing/simulation-replay)
+**专题文档：**[视频回放](/vehicle-vision/testing/video-replay-test) · [视觉仿真](/vehicle-vision/testing/simulation-test) · [SIL/HIL](/vehicle-vision/testing/sil-hil-test)
 
 ## 阶段 6：目标硬件与端侧验证
 
@@ -95,7 +97,7 @@
 
 **学习资料：**[设备测试与 CI 参考](/ci-quality)；[B 站：自动驾驶感知模型车端部署性能测试](https://search.bilibili.com/all?keyword=%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E6%84%9F%E7%9F%A5%E6%A8%A1%E5%9E%8B%20%E8%BD%A6%E7%AB%AF%E9%83%A8%E7%BD%B2%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95)。
 
-**专题文档：**[ECU 性能、回归与 CI](/vehicle-vision/testing/ecu-performance-ci)
+**专题文档：**[ECU 性能](/vehicle-vision/testing/ecu-performance-test) · [回归与 CI](/vehicle-vision/testing/regression-ci)
 
 ## 阶段 7：回归、CI 与 AI 治理
 
@@ -107,7 +109,7 @@
 
 **学习资料：**[CI 与质量趋势](/ci-quality)、[大模型应用测试](/llm-testing)；[B 站：自动驾驶感知回归测试数据闭环 CI](https://search.bilibili.com/all?keyword=%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E6%84%9F%E7%9F%A5%E5%9B%9E%E5%BD%92%E6%B5%8B%E8%AF%95%20CI%20%E6%95%B0%E6%8D%AE%E9%97%AD%E7%8E%AF)。
 
-**专题文档：**[ECU 性能、回归与 CI](/vehicle-vision/testing/ecu-performance-ci)
+**专题文档：**[回归与 CI](/vehicle-vision/testing/regression-ci) · [ECU 性能](/vehicle-vision/testing/ecu-performance-test)
 
 ## 完成标准
 

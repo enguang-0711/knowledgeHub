@@ -32,7 +32,7 @@
 
 **练习与验收：**写一份命令契约，定义表达范围、意图/槽位、成功状态、取消/超时行为和音频输入条件。把端到端时延拆到每个处理阶段，并指出可观察的事件。
 
-**知识点文档：**[语音需求与系统架构](/vehicle-voice/development/system-architecture-and-requirements)
+**知识点文档：**[语音需求工程](/vehicle-voice/development/requirements-engineering) · [语音系统架构](/vehicle-voice/development/system-architecture)
 
 ## 阶段 1：编程、数学与实时工程基础
 
@@ -42,7 +42,7 @@
 
 **练习与验收：**用 C++ 构建一个 PCM 文件检查与分帧工具，用 Python 生成波形和频谱报告；验证异常输入、缓冲区释放、线程停止和依赖版本。
 
-**知识点文档：**[C++ 与实时音频工程](/vehicle-voice/development/cpp-audio-runtime) · [Python 音频数据处理](/vehicle-voice/development/python-audio) · [Linux、Git 与音频调试](/vehicle-voice/development/linux-git-debugging) · [语音开发数学与信号处理基础](/vehicle-voice/development/math-dsp)
+**知识点文档：**[C++ 与实时音频工程](/vehicle-voice/development/cpp-audio-runtime) · [Python 音频数据处理](/vehicle-voice/development/python-audio) · [Linux 音频开发](/vehicle-voice/development/linux-audio-development) · [Git 与模型版本](/vehicle-voice/development/git-model-versioning) · [音频链路调试](/vehicle-voice/development/audio-debugging) · [数学基础](/vehicle-voice/development/speech-math-foundations)
 
 ## 阶段 2：数字音频、声学与信号处理
 
@@ -50,7 +50,7 @@
 
 **练习与验收：**实现波形/分帧/短时频谱工具；比较混叠、削波、重采样和噪声叠加；用已知信号验证采样率、时长和频率结果。
 
-**知识点文档：**[数字音频格式与预处理](/vehicle-voice/development/digital-audio) · [车内声学与音频前端](/vehicle-voice/development/acoustics-audio-front-end)
+**知识点文档：**[数字音频格式](/vehicle-voice/development/audio-formats) · [音频预处理](/vehicle-voice/development/audio-preprocessing) · [信号处理](/vehicle-voice/development/speech-signal-processing) · [车内声学](/vehicle-voice/development/cabin-acoustics)
 
 ## 阶段 3：音频前端、唤醒词与端点检测
 
@@ -58,7 +58,7 @@
 
 **练习与验收：**构造包含语音、扬声器回声、空调噪声和静音间隔的流；绘制各阶段波形并实现 VAD/端点状态原型，明确 false accept/false reject 和端点延迟的定义。
 
-**知识点文档：**[AEC、降噪、增益与波束形成](/vehicle-voice/development/audio-front-end) · [唤醒词、VAD 与端点检测](/vehicle-voice/development/wake-vad-endpoint) · [多音区与说话人处理](/vehicle-voice/development/speaker-multizone)
+**知识点文档：**[AEC](/vehicle-voice/development/echo-cancellation) · [降噪](/vehicle-voice/development/noise-reduction) · [AGC](/vehicle-voice/development/gain-control) · [波束形成](/vehicle-voice/development/beamforming) · [唤醒词](/vehicle-voice/development/wake-word) · [VAD](/vehicle-voice/development/vad) · [端点检测](/vehicle-voice/development/endpoint-detection) · [多音区语音](/vehicle-voice/development/multi-zone-audio) · [说话人归属](/vehicle-voice/development/speaker-attribution)
 
 ## 阶段 4：ASR、NLU 与对话管理
 
@@ -66,7 +66,7 @@
 
 **练习与验收：**建立离线 ASR 与 NLU 基线，保存逐样本假设、分数和时延；实现一个多轮语义状态服务，覆盖补槽、改口、取消、超时和会话重置。
 
-**知识点文档：**[ASR 模型与解码](/vehicle-voice/development/asr-models-decoding) · [ASR 语料、训练与领域适配](/vehicle-voice/development/asr-training-adaptation) · [语音数据集与评估](/vehicle-voice/development/speech-data-evaluation) · [NLU 意图与槽位](/vehicle-voice/development/nlu-intent-slots) · [对话管理与上下文状态](/vehicle-voice/development/dialogue-management)
+**知识点文档：**[ASR 模型架构](/vehicle-voice/development/asr-model-architectures) · [ASR 解码](/vehicle-voice/development/asr-decoding) · [ASR 语料](/vehicle-voice/development/asr-corpus) · [ASR 训练](/vehicle-voice/development/asr-training) · [领域适配](/vehicle-voice/development/domain-adaptation) · [语音数据评估](/vehicle-voice/development/speech-data-evaluation) · [意图识别](/vehicle-voice/development/intent-classification) · [槽位抽取](/vehicle-voice/development/slot-filling) · [对话管理](/vehicle-voice/development/dialogue-management)
 
 ## 阶段 5：TTS、流式交互与多音区
 
@@ -74,7 +74,7 @@
 
 **练习与验收：**构建分句流式播报原型，在播报中接受新命令并正确停止旧音频；验证长句缓冲、播放结束事件、取消和服务重连。
 
-**知识点文档：**[TTS、发音与韵律](/vehicle-voice/development/tts-synthesis) · [流式语音服务与交互协议](/vehicle-voice/development/streaming-voice-services) · [多音区与说话人处理](/vehicle-voice/development/speaker-multizone)
+**知识点文档：**[TTS 文本规范化](/vehicle-voice/development/text-normalization) · [发音词典](/vehicle-voice/development/pronunciation-lexicon) · [韵律与合成](/vehicle-voice/development/prosody-synthesis) · [流式语音服务](/vehicle-voice/development/streaming-voice-services) · [多音区语音](/vehicle-voice/development/multi-zone-audio)
 
 ## 阶段 6：车载功能和业务接口
 
@@ -90,7 +90,7 @@
 
 **练习与验收：**在目标或清楚标注的模拟设备上测量分段和端到端 p50/p95 延迟、CPU/加速器/内存、音频丢帧和长时稳定性；构建最小固定集回归并模拟断流/重启。
 
-**知识点文档：**[语音模型部署与边缘推理](/vehicle-voice/development/model-deployment) · [实时性能与优化](/vehicle-voice/development/performance-optimization) · [可靠性、隐私与数据闭环](/vehicle-voice/development/reliability-data-loop)
+**知识点文档：**[语音模型部署与边缘推理](/vehicle-voice/development/model-deployment) · [实时性能与优化](/vehicle-voice/development/performance-optimization) · [可靠性与降级](/vehicle-voice/development/reliability-engineering) · [可观测性与数据闭环](/vehicle-voice/development/observability-data-loop) · [隐私与数据治理](/vehicle-voice/development/privacy-governance)
 
 ## 最小端到端项目
 

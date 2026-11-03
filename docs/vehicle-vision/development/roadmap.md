@@ -43,9 +43,9 @@
 
 **练习与验收：**选一个明确功能，写出输入、输出、运行频率、目标硬件、可接受失效行为和待确认约束；为每个输出找到可以检查的可视化或日志。
 
-**开发知识点：**[前视 ADAS 感知开发](./adas-perception-development) · [环视与泊车视觉开发](./surround-view-development) · [舱内 DMS/OMS 视觉开发](./cabin-vision-development)
+**开发知识点：**[前视 ADAS 感知开发](./adas-perception-development) · [环视成像与鸟瞰图](./surround-view-imaging-development) · [泊车感知](./parking-perception-development) · [DMS 驾驶员监测](./dms-development) · [OMS 乘员监测](./oms-development)
 
-**知识点文档：**[功能需求与视觉系统架构](/vehicle-vision/development/system-architecture-and-requirements)
+**知识点文档：**[视觉需求工程](/vehicle-vision/development/requirements-engineering) · [视觉系统架构](/vehicle-vision/development/system-architecture)
 
 ## 阶段 1：编程、数学和开发环境
 
@@ -71,7 +71,7 @@
 
 **学习资料：**[C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) · [CMake 教程](https://cmake.org/cmake/help/latest/guide/tutorial/index.html) · [NumPy 用户指南](https://numpy.org/doc/stable/user/)
 
-**知识点文档：**[C++、CMake 与资源管理](/vehicle-vision/development/cpp-cmake-resource-management) · [Python、NumPy 与视觉数据处理](/vehicle-vision/development/python-numpy) · [Linux、Git 与调试工具](/vehicle-vision/development/linux-git-debugging) · [计算机视觉数学基础](/vehicle-vision/development/math-for-vision)
+**知识点文档：**[C++ 资源生命周期](/vehicle-vision/development/cpp-resource-lifecycle) · [CMake 构建系统](/vehicle-vision/development/cmake-build-system) · [Python、NumPy 与视觉数据处理](/vehicle-vision/development/python-numpy) · [Linux 视觉开发](/vehicle-vision/development/linux-vision-development) · [Git 与数据版本](/vehicle-vision/development/git-dataset-versioning) · [视觉调试](/vehicle-vision/development/vision-debugging) · [计算机视觉数学基础](/vehicle-vision/development/math-for-vision)
 
 ## 阶段 2：图像处理、成像与几何
 
@@ -99,9 +99,9 @@
 
 **学习资料：**[OpenCV 相机标定教程](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html) · [OpenCV 图像处理教程](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
 
-**知识点文档：**[相机成像与镜头模型](/vehicle-vision/development/camera-imaging-and-lens-models) · [坐标变换、标定与时间同步](/vehicle-vision/development/camera-geometry-calibration-sync)
+**知识点文档：**[相机成像与镜头模型](/vehicle-vision/development/camera-imaging-and-lens-models) · [相机标定](/vehicle-vision/development/camera-calibration) · [坐标变换](/vehicle-vision/development/coordinate-frames) · [多相机时间同步](/vehicle-vision/development/camera-time-sync)
 
-**知识点文档：**[图像格式与预处理](/vehicle-vision/development/image-formats-preprocessing) · [相机成像与镜头模型](/vehicle-vision/development/camera-imaging-and-lens-models) · [坐标变换、标定与时间同步](/vehicle-vision/development/camera-geometry-calibration-sync)
+**知识点文档：**[图像格式](/vehicle-vision/development/image-formats) · [图像预处理](/vehicle-vision/development/image-preprocessing) · [相机成像与镜头模型](/vehicle-vision/development/camera-imaging-and-lens-models) · [相机标定](/vehicle-vision/development/camera-calibration) · [坐标变换](/vehicle-vision/development/coordinate-frames) · [时间同步](/vehicle-vision/development/camera-time-sync)
 
 ## 阶段 3：经典视觉与视频处理
 
@@ -166,9 +166,9 @@
 
 **学习资料：**[PyTorch Tutorials](https://pytorch.org/tutorials/) · [COCO 评估说明](https://cocodataset.org/#detection-eval)
 
-**知识点文档：**[视觉数据、训练与评估](/vehicle-vision/development/vision-data-and-training) · [目标检测](/vehicle-vision/development/object-detection) · [语义与实例分割](/vehicle-vision/development/segmentation)
+**知识点文档：**[视觉数据集工程](/vehicle-vision/development/dataset-engineering) · [标注质量](/vehicle-vision/development/annotation-quality) · [模型训练与评估](/vehicle-vision/development/model-training-evaluation) · [目标检测](/vehicle-vision/development/object-detection) · [语义分割](/vehicle-vision/development/semantic-segmentation) · [实例分割](/vehicle-vision/development/instance-segmentation)
 
-**知识点文档：**[深度学习基础与训练机制](/vehicle-vision/development/deep-learning-foundations) · [视觉数据、训练与评估](/vehicle-vision/development/vision-data-and-training) · [图像分类](/vehicle-vision/development/classification) · [目标检测](/vehicle-vision/development/object-detection) · [语义与实例分割](/vehicle-vision/development/segmentation) · [多目标跟踪](/vehicle-vision/development/tracking) · [关键点与姿态估计](/vehicle-vision/development/keypoints-pose) · [深度估计与几何感知](/vehicle-vision/development/depth-estimation-geometry)
+**知识点文档：**[深度学习基础](/vehicle-vision/development/deep-learning-foundations) · [数据集工程](/vehicle-vision/development/dataset-engineering) · [标注质量](/vehicle-vision/development/annotation-quality) · [模型训练与评估](/vehicle-vision/development/model-training-evaluation) · [图像分类](/vehicle-vision/development/classification) · [目标检测](/vehicle-vision/development/object-detection) · [语义分割](/vehicle-vision/development/semantic-segmentation) · [实例分割](/vehicle-vision/development/instance-segmentation) · [多目标跟踪](/vehicle-vision/development/tracking) · [关键点与姿态估计](/vehicle-vision/development/keypoints-pose) · [深度估计与几何感知](/vehicle-vision/development/depth-estimation-geometry)
 
 ## 阶段 5：选择一个领域主线
 
@@ -206,7 +206,7 @@
 
 **典型难点：**拼接画面“视觉上连贯”不代表几何正确；非地面物体、车身振动、相机安装变化和时间错位容易形成错位或重影。除视觉观感外，应使用已知地面点、距离和车体边界做几何检查。
 
-**知识点文档：**[环视与泊车视觉开发](/vehicle-vision/development/surround-view-development)
+**知识点文档：**[环视成像与鸟瞰图开发](/vehicle-vision/development/surround-view-imaging-development) · [泊车感知开发](/vehicle-vision/development/parking-perception-development)
 
 ### 舱内 DMS/OMS
 
@@ -223,11 +223,11 @@
 
 **典型难点：**视觉线索往往需要跨帧累积；单帧阈值难以兼顾误报和漏报。产品事件定义应与算法状态机、时间窗口和下游提示一致，且涉及人群表现时要检查数据代表性和偏差。
 
-**知识点文档：**[舱内 DMS/OMS 视觉开发](/vehicle-vision/development/cabin-vision-development)
+**知识点文档：**[DMS 驾驶员监测开发](/vehicle-vision/development/dms-development) · [OMS 乘员监测开发](/vehicle-vision/development/oms-development)
 
 **练习与验收：**围绕一个可描述的功能需求做原型，展示输入、输出、失败样例、适用范围以及无法处理的情形；把算法输出与下游接口契约对应起来。为主线维护一张“输入条件—算法模块—输出—风险—验证证据”表，避免把 ADAS、环视和 DMS 的类别、几何或验收方式混成一套。
 
-**开发知识点：**[视觉数据、训练与评估](/vehicle-vision/development/vision-data-and-training) · [可靠性、可观测性与数据闭环](/vehicle-vision/development/reliability-data-loop)
+**开发知识点：**[视觉数据集工程](/vehicle-vision/development/dataset-engineering) · [标注质量](/vehicle-vision/development/annotation-quality) · [模型训练与评估](/vehicle-vision/development/model-training-evaluation) · [视觉可靠性](/vehicle-vision/development/reliability-engineering) · [可观测性与数据闭环](/vehicle-vision/development/observability-data-loop)
 
 ## 阶段 6：模型导出、端侧部署与优化
 
@@ -255,7 +255,7 @@
 
 **开发知识点：**[端到端性能剖析](/vehicle-vision/development/performance-profiling)
 
-**知识点文档：**[模型导出与推理部署](/vehicle-vision/development/model-export-inference) · [端侧优化与量化](/vehicle-vision/development/edge-optimization) · [端到端性能剖析](/vehicle-vision/development/performance-profiling)
+**知识点文档：**[模型导出](/vehicle-vision/development/model-export) · [推理运行时](/vehicle-vision/development/inference-runtime) · [模型量化](/vehicle-vision/development/quantization) · [端侧推理优化](/vehicle-vision/development/edge-optimization) · [端到端性能剖析](/vehicle-vision/development/performance-profiling)
 
 ## 阶段 7：系统集成、可靠性与迭代
 
@@ -281,7 +281,7 @@
 
 **开发知识点：**[视频时序与流式处理](/vehicle-vision/development/video-temporal-processing) · [视觉系统集成](/vehicle-vision/development/system-integration)
 
-**知识点文档：**[视觉系统集成](/vehicle-vision/development/system-integration) · [可靠性、可观测性与数据闭环](/vehicle-vision/development/reliability-data-loop)
+**知识点文档：**[视觉系统集成](/vehicle-vision/development/system-integration) · [可观测性与数据闭环](/vehicle-vision/development/observability-data-loop)
 
 ## 贯穿全程的知识清单
 
