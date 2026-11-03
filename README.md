@@ -40,7 +40,7 @@ npm run docs:preview
 - `docs/knowledge-map.md`：全站主题分类、内容范围与成熟度。
 - `docs/vehicle-cases.md`：车载语音、视觉两个独立案例的导航与边界说明。
 - `docs/vehicle-voice-testing.md`：车载语音行业专题导览。
-- `docs/vehicle-vision/`：车载视觉专题，分别提供开发与测试学习路线。
+- `docs/vehicle-vision/`：车载视觉专题，提供开发与测试路线；`development/` 按知识点拆分开发文档。
 - `docs/knowledge-base-plan.md`：知识库本身的分阶段建设、验收门槛和维护机制。
 - `docs/templates.md`：可复制的测试用例、语料清单、实验记录和缺陷报告模板。
 - `.github/workflows/pages.yml`：Pages 构建、PR 校验和部署流程。

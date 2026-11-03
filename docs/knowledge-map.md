@@ -25,7 +25,7 @@
 
 ### 车载视觉
 
-独立内容线覆盖相机成像与标定、数据和标注、视觉任务指标、ODD 场景覆盖、前视 ADAS、环视/泊车、舱内 DMS/OMS、仿真回放、ECU 性能与 CI。进入[视觉案例导览](/vehicle-vision/)浏览专题；开发者可按[车载视觉开发学习路线](/vehicle-vision/development-roadmap)学习算法实现与车端部署，测试人员可按[视觉测试学习路线](/vehicle-vision/roadmap)学习评估和验证闭环。[视觉专题目录](/vehicle-vision/)提供逐篇入口。
+独立内容线覆盖相机成像与标定、数据和标注、视觉任务指标、ODD 场景覆盖、前视 ADAS、环视/泊车、舱内 DMS/OMS、仿真回放、ECU 性能与 CI。进入[视觉案例导览](/vehicle-vision/)浏览专题；开发者可按[车载视觉开发学习路线](/vehicle-vision/development-roadmap)学习，并从[视觉开发知识点文档目录](/vehicle-vision/development/)逐篇阅读算法实现与车端部署专题；测试人员可按[视觉测试学习路线](/vehicle-vision/roadmap)学习评估和验证闭环。
 
 前视 ADAS、环视/泊车和舱内视觉的输入、标签、业务风险和验收指标彼此不同，分别在独立文档中说明，不能用单一“视觉准确率”覆盖这些系统。
 

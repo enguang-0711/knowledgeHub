@@ -45,6 +45,8 @@
 
 **专题入口：**[前视 ADAS](/vehicle-vision/adas-front-camera) · [环视与泊车](/vehicle-vision/surround-view-parking) · [舱内 DMS/OMS](/vehicle-vision/cabin-vision-dms-oms)
 
+**知识点文档：**[功能需求与视觉系统架构](/vehicle-vision/development/system-architecture-and-requirements)
+
 ## 阶段 1：编程、数学和开发环境
 
 车端算法岗位通常需要同时理解模型代码和运行时工程。按“能读懂、能修改、能定位问题”的目标建立以下能力：
@@ -68,6 +70,8 @@
 **练习与验收：**编写一个 C++ 命令行程序，读取图像或视频、执行缩放和颜色转换并输出结果；再写 Python 脚本对输出做尺寸、通道和像素范围检查。为工程补上 CMake 构建、参数校验、错误日志、至少一个边界用例和干净环境构建说明。验收时能解释图像对象的所有权、stride 和是否发生了数据拷贝。
 
 **学习资料：**[C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) · [CMake 教程](https://cmake.org/cmake/help/latest/guide/tutorial/index.html) · [NumPy 用户指南](https://numpy.org/doc/stable/user/)
+
+**知识点文档：**[C++、CMake 与资源管理](/vehicle-vision/development/cpp-cmake-resource-management) · [Python、NumPy 与视觉数据处理](/vehicle-vision/development/python-numpy) · [Linux、Git 与调试工具](/vehicle-vision/development/linux-git-debugging) · [计算机视觉数学基础](/vehicle-vision/development/math-for-vision)
 
 ## 阶段 2：图像处理、成像与几何
 
@@ -97,6 +101,8 @@
 
 **专题入口：**[摄像头成像、坐标与标定](/vehicle-vision/camera-imaging-calibration)
 
+**知识点文档：**[图像格式与预处理](/vehicle-vision/development/image-formats-preprocessing) · [相机成像与镜头模型](/vehicle-vision/development/camera-imaging-and-lens-models) · [坐标变换、标定与时间同步](/vehicle-vision/development/camera-geometry-calibration-sync)
+
 ## 阶段 3：经典视觉与视频处理
 
 学习滤波、阈值、边缘、角点与局部特征、透视变换、单应性、光流、背景建模和图像金字塔。理解单帧处理与视频处理的差别：帧间运动、短时遮挡、抖动、曝光变化和处理延迟都可能改变最终功能行为。
@@ -119,6 +125,8 @@
 **练习与验收：**选取一段合法来源的视频，实现特征跟踪或稀疏光流；记录失败帧，并区分快速运动、弱纹理、遮挡和曝光变化等原因。为每帧保留时间戳、跟踪点数量和处理时延，再人为制造丢帧/时间间隔变化，观察状态是否正确重置或退化。
 
 **学习资料：**[OpenCV 官方教程](https://docs.opencv.org/4.x/d9/df8/tutorial_root.html)
+
+**知识点文档：**[经典计算机视觉方法](/vehicle-vision/development/classical-vision) · [视频时序与流式处理](/vehicle-vision/development/video-temporal-processing)
 
 ## 阶段 4：深度学习与视觉任务
 
@@ -143,8 +151,6 @@
 
 | 任务 | 需要理解的概念 | 常见结果检查 |
 |---|---|---|
-| 任务 | 要掌握的知识点 | 常见结果检查 |
-|---|---|---|
 | 分类 | 类别定义、类别不平衡、决策阈值、概率校准和拒识边界 | 混淆矩阵、各类召回、置信度分布、阈值变化影响 |
 | 目标检测 | 框参数化、正负样本分配、分类/定位损失、NMS 或其他候选筛选、标签匹配 | AP、不同尺度/距离/遮挡切片的误检与漏检；框坐标是否映射回原图 |
 | 语义/实例分割 | 像素标签、类别边界、前景/背景不平衡、掩码分辨率 | IoU/mIoU、边界质量、小目标和稀有类别分层 |
@@ -161,6 +167,8 @@
 **学习资料：**[PyTorch Tutorials](https://pytorch.org/tutorials/) · [COCO 评估说明](https://cocodataset.org/#detection-eval)
 
 **专题入口：**[视觉任务与评估指标](/vehicle-vision/perception-tasks-metrics) · [数据集与标注质量](/vehicle-vision/dataset-and-annotation)
+
+**知识点文档：**[深度学习基础与训练机制](/vehicle-vision/development/deep-learning-foundations) · [视觉数据、训练与评估](/vehicle-vision/development/vision-data-and-training) · [图像分类](/vehicle-vision/development/classification) · [目标检测](/vehicle-vision/development/object-detection) · [语义与实例分割](/vehicle-vision/development/segmentation) · [多目标跟踪](/vehicle-vision/development/tracking) · [关键点与姿态估计](/vehicle-vision/development/keypoints-pose) · [深度估计与几何感知](/vehicle-vision/development/depth-estimation-geometry)
 
 ## 阶段 5：选择一个领域主线
 
@@ -181,6 +189,8 @@
 
 **典型难点：**远距离小目标的像素信息有限；低太阳角、隧道出入口、雨滴/污渍等会同时改变成像和模型输入；单帧正确也可能因时序抖动导致功能不稳定。调试时同步看原始图像、预处理图、模型输出、跟踪结果和下游接口。
 
+**知识点文档：**[前视 ADAS 感知开发](/vehicle-vision/development/adas-perception-development)
+
 ### 环视与泊车
 
 重点学习鱼眼相机模型、多相机标定与同步、去畸变、鸟瞰变换和拼接；再按功能扩展车位、边界、障碍物和可行驶区域感知。重点检查拼接几何、相机接缝、车体遮挡和近场盲区。
@@ -196,6 +206,8 @@
 
 **典型难点：**拼接画面“视觉上连贯”不代表几何正确；非地面物体、车身振动、相机安装变化和时间错位容易形成错位或重影。除视觉观感外，应使用已知地面点、距离和车体边界做几何检查。
 
+**知识点文档：**[环视与泊车视觉开发](/vehicle-vision/development/surround-view-development)
+
 ### 舱内 DMS/OMS
 
 重点学习人脸/人体检测、关键点与姿态、视线或状态识别、红外成像和补光。针对眼镜、口罩、手部遮挡、不同身材/肤色、座椅位置和昼夜变化构造数据切片，并以隐私授权和最小化数据访问为前提。
@@ -210,6 +222,8 @@
 | 隐私和数据管理 | 采集授权、用途限制、脱敏、访问控制、保留与删除 | 开发样本和日志有来源/用途记录；不需要的原始图像不长期保留 |
 
 **典型难点：**视觉线索往往需要跨帧累积；单帧阈值难以兼顾误报和漏报。产品事件定义应与算法状态机、时间窗口和下游提示一致，且涉及人群表现时要检查数据代表性和偏差。
+
+**知识点文档：**[舱内 DMS/OMS 视觉开发](/vehicle-vision/development/cabin-vision-development)
 
 **练习与验收：**围绕一个可描述的功能需求做原型，展示输入、输出、失败样例、适用范围以及无法处理的情形；把算法输出与下游接口契约对应起来。为主线维护一张“输入条件—算法模块—输出—风险—验证证据”表，避免把 ADAS、环视和 DMS 的类别、几何或验收方式混成一套。
 
@@ -241,6 +255,8 @@
 
 **专题入口：**[ECU 性能、回归与 CI](/vehicle-vision/ecu-performance-ci)
 
+**知识点文档：**[模型导出与推理部署](/vehicle-vision/development/model-export-inference) · [端侧优化与量化](/vehicle-vision/development/edge-optimization) · [端到端性能剖析](/vehicle-vision/development/performance-profiling)
+
 ## 阶段 7：系统集成、可靠性与迭代
 
 把视觉算法作为系统组件交付：定义输入/输出 schema、时间戳和坐标系；处理无效帧、掉帧、超时、相机断流、标定缺失和资源不足；支持日志、诊断和版本回滚。根据项目架构接入相机驱动、消息中间件、车辆状态和下游功能，同时避免在算法线程中做不可控阻塞。
@@ -265,6 +281,8 @@
 
 **专题入口：**[仿真、回放与 SIL/HIL](/vehicle-vision/simulation-replay) · [视觉测试学习路线](/vehicle-vision/roadmap)
 
+**知识点文档：**[视觉系统集成](/vehicle-vision/development/system-integration) · [可靠性、可观测性与数据闭环](/vehicle-vision/development/reliability-data-loop)
+
 ## 贯穿全程的知识清单
 
 - **算法基础：**图像处理、几何视觉、目标检测/分割/跟踪、时序稳定、模型评估和错误分析。
@@ -288,6 +306,8 @@
 该项目用于学习算法与部署工程，不代表车规产品验证、道路安全结论或量产验收。
 
 ## 高级工程师能力标尺
+
+**全部知识点文档：**[车载视觉开发知识点目录](/vehicle-vision/development/)
 
 | 能力面 | 高级工程师应能独立完成 | 可检查的证据 |
 |---|---|---|
