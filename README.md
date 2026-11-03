@@ -11,6 +11,14 @@ npm ci
 npm run docs:dev
 ```
 
+安装 Git hooks，让每次本地提交前自动构建：
+
+```bash
+npm run hooks:install
+```
+
+安装依赖后，每次 `git commit` 都会运行 `npm run docs:build`；构建失败时提交会被阻止。每个新 clone 需要执行一次安装命令。紧急情况下可以用 `git commit --no-verify` 跳过 hook，但应随后补跑构建。
+
 本地生产构建：
 
 ```bash
@@ -20,7 +28,7 @@ npm run docs:preview
 
 ## 发布到 GitHub Pages
 
-1. 将目录推送到 GitHub 仓库的 `main` 分支。
+1. 将目录推送到 GitHub 仓库。每次分支 push 和 Pull Request 都会运行构建检查；只有 `main` 分支会部署 Pages。
 2. 在仓库 **Settings → Pages → Build and deployment** 中，将来源设为 **GitHub Actions**。
 3. 等待 **Actions → Build and deploy knowledge base** 成功，站点会发布到 `https://<owner>.github.io/<repository>/`。
 

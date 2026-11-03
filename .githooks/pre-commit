@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+echo "Building VitePress knowledge base before commit..."
+npm run docs:build
