@@ -8,8 +8,20 @@ type Topic = { title: string; query: string }
 
 const topics: Record<string, Topic> = {
   'knowledge-map': { title: '测试与质量工程知识地图', query: '软件测试 质量工程 学习路线' },
+  'vehicle-cases': { title: '车载测试领域案例', query: '车载语音测试 车载视觉测试' },
   'vehicle-voice-testing': { title: '车载语音测试专题', query: '车载语音自动化测试 ASR NLU HIL' },
   'vehicle-voice-roadmap': { title: '车载语音测试学习路线', query: '车载语音测试 ASR NLU 自动化学习' },
+  'vehicle-vision': { title: '车载视觉系统测试', query: '车载视觉测试 ADAS 感知 摄像头' },
+  'vehicle-vision/roadmap': { title: '车载视觉测试学习路线', query: '自动驾驶视觉感知测试 数据集 评估指标' },
+  'vehicle-vision/camera-imaging-calibration': { title: '摄像头成像与标定', query: '车载摄像头 ISP 相机内外参 标定' },
+  'vehicle-vision/dataset-and-annotation': { title: '视觉数据集与标注质量', query: '自动驾驶视觉数据集 标注规范 CVAT 数据质量' },
+  'vehicle-vision/perception-tasks-metrics': { title: '视觉任务与评估指标', query: '目标检测 AP mAP 跟踪分割 评估指标' },
+  'vehicle-vision/scenario-coverage': { title: '视觉场景覆盖与 ODD', query: '自动驾驶 ODD 长尾场景 覆盖率测试' },
+  'vehicle-vision/adas-front-camera': { title: '前视 ADAS 感知测试', query: '前视摄像头 ADAS 感知测试 车道线 目标跟踪' },
+  'vehicle-vision/surround-view-parking': { title: '环视与泊车视觉', query: 'AVM 环视拼接 标定 泊车感知测试' },
+  'vehicle-vision/cabin-vision-dms-oms': { title: '舱内 DMS / OMS', query: 'DMS OMS 驾驶员乘员监测 视觉测试' },
+  'vehicle-vision/simulation-replay': { title: '视觉仿真与回放', query: '自动驾驶视觉 SIL HIL 视频回放 场景仿真' },
+  'vehicle-vision/ecu-performance-ci': { title: '视觉 ECU 性能与 CI', query: '车载 ECU 感知模型 性能测试 CI 回归' },
   architecture: { title: '端到端语音架构', query: '车载语音端到端系统架构 ASR NLU' },
   metrics: { title: '语音质量指标', query: 'WER CER 语音识别评测指标' },
   'audio-acoustics': { title: '音频与车内声学', query: '车载语音音频声学 SNR 人工嘴测试' },
@@ -29,8 +41,12 @@ const topics: Record<string, Topic> = {
 }
 
 const route = useRoute()
-const slug = computed(() =>
-  route.path.replace(/\/$/, '').split('/').pop()?.replace(/\.html$/, '') || 'index'
+const slug = computed(() => route.path
+  .replace(/\.html$/, '')
+  .replace(/\/$/, '')
+  .split('/')
+  .filter(Boolean)
+  .join('/') || 'index'
 )
 const topic = computed(() => topics[slug.value] ?? {
   title: '本页主题',
