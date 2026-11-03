@@ -1,6 +1,6 @@
-# 车载语音自动化测试知识库
+# 软件测试与质量工程知识库
 
-这是一个中文、Markdown 优先的车载语音自动化测试学习知识库，面向从测试开发基础走到端到端闭环、HIL 集成和 AI 辅助质量工程的学习者。站点使用 VitePress，GitHub Actions 自动构建并部署到 GitHub Pages。
+这是一个中文、Markdown 优先的软件测试与质量工程学习知识库，覆盖测试设计、自动化工程、质量度量、CI 和 AI 应用测试。**车载语音自动化测试是当前已展开的行业专题之一，不是整个知识库的唯一范围。**站点使用 VitePress，GitHub Actions 自动构建并部署到 GitHub Pages。
 
 ## 本地预览
 
@@ -28,8 +28,10 @@ npm run docs:preview
 
 ## 目录约定
 
-- `docs/`：面向读者的知识正文，按学习顺序组织。
-- `docs/knowledge-base-plan.md`：知识库本身的分阶段建设计划、验收门槛和维护机制。
+- `docs/`：面向读者的知识正文，按通用能力、AI 测试和领域专题组织。
+- `docs/knowledge-map.md`：全站主题分类、内容范围与成熟度。
+- `docs/vehicle-voice-testing.md`：车载语音行业专题导览。
+- `docs/knowledge-base-plan.md`：知识库本身的分阶段建设、验收门槛和维护机制。
 - `docs/templates.md`：可复制的测试用例、语料清单、实验记录和缺陷报告模板。
 - `.github/workflows/pages.yml`：Pages 构建、PR 校验和部署流程。
 
